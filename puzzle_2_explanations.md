@@ -45,16 +45,31 @@ Since you know *all* jars are mislabelled, the jar labelled "Mix" cannot actuall
 ### 5. Postman Pat delivers the mail in the small village Ten houses... Which two houses did he not deliver to?
 *(The prompt details delivery sums for the week: Mon=18, Tue=12, Wed=23, Thu=19, Fri=32, Sat=25)*
 **Explanation:** 
-The total sum of all deliveries for the week is `18 + 12 + 23 + 19 + 32 + 25 = 129`. 
-Since Pat visited 4 houses a day for 6 days, he made 24 deliveries. The prompt states that 8 houses received mail 3 times each, which perfectly accounts for all 24 deliveries (`8 * 3 = 24`). 
-Because each of those 8 houses was visited exactly 3 times, the sum of those 8 unique house numbers must be `129 / 3 = 43`.
-The sum of all 10 houses in the village is `1 + 2 + 3 + ... + 10 = 55`.
-Therefore, the sum of the two houses he *did not* visit is `55 - 43 = 12`. 
-The possible pairs summing to 12 are (2,10), (3,9), (4,8), and (5,7). 
-On Friday, the sum of 4 visited houses was 32. The only possible combinations of 4 houses under 10 that sum to 32 are `(10, 9, 8, 5)` and `(10, 9, 7, 6)`. This means houses 10 and 9 *must* have been visited. This eliminates (2,10) and (3,9). 
-On Tuesday, the sum of 4 visited houses was 12. The only combinations summing to 12 are `(1, 2, 3, 6)` and `(1, 2, 4, 5)`.
-If the missing houses were (5,7), then Friday's required sum of 32 would be impossible (since both combinations for 32 require either a 5 or a 7). 
-Therefore, the two houses that did not receive mail must be **4 and 8**.
+Let's break this down into simple steps:
+
+**Step 1: The Village Total**
+There are 10 houses numbered 1 through 10. If you add up all their house numbers (`1 + 2 + ... + 10`), the total is **55**.
+
+**Step 2: The Magic Number 12**
+Pat made **24 deliveries** in total (4 houses per day * 6 days). 
+The puzzle tells us he ignored **2 houses**, and the other **8 houses** each got exactly 3 deliveries. (8 houses x 3 deliveries = 24 total deliveries, which perfectly matches).
+If we add up the daily sums for the whole week (`18+12+23+19+32+25`), we get **129**. 
+Because the 8 houses he *did* visit were each visited exactly 3 times, their house numbers were added into that "129" total exactly 3 times. So, if we divide 129 by 3, we get the sum of those 8 visited house numbers: **43**.
+* Sum of ALL 10 houses = **55**.
+* Sum of the 8 VISITED houses = **43**.
+* Therefore, the sum of the 2 SKIPPED houses must be **12** (`55 - 43 = 12`).
+
+**Step 3: Which two houses add up to 12?**
+There are only four possible pairs of houses that add up to 12: `(2 and 10)`, `(3 and 9)`, `(4 and 8)`, and `(5 and 7)`.
+
+**Step 4: The Friday Clue (Eliminating 10 and 9)**
+On Friday, the 4 houses he visited added up to **32**. To get exactly 32 using four numbers under 10, the *only* two combinations in the world are `(10, 9, 8, 5)` or `(10, 9, 7, 6)`. Notice that **both** of these possible Friday routes require House 10 and House 9. Because he *must* have visited houses 10 and 9 on Friday, they cannot be the skipped houses. This completely eliminates the `(2, 10)` pair and the `(3, 9)` pair.
+
+**Step 5: The Final Clue (Eliminating 5 and 7)**
+We are left with two possible pairs for the skipped houses: `(4 and 8)` or `(5 and 7)`. 
+Let's pretend he skipped houses 5 and 7 all week. Look back at the Friday clue! The only two ways to get 32 on Friday are `(10,9,8,5)` or `(10,9,7,6)`. The first route requires House 5, and the second route requires House 7. If he skips *both* 5 and 7 all week, it is mathematically impossible for him to make a Friday route equal 32. Therefore, the skipped houses cannot be 5 and 7.
+
+**Conclusion:** By process of elimination, the only pair left that adds up to 12 is **4 and 8**. Those are the two houses Postman Pat ignored!
 
 ---
 
