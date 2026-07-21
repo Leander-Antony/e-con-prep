@@ -1,0 +1,101 @@
+[
+  {
+    "question": "Using seven 7's to get the answer as 100.",
+    "answer": "See explanation",
+    "explanation": "There are a few variations, but one of the most elegant using exactly seven 7's is:\n`77 + 7 + 7 + 7 + (7 + 7) / 7 = 100`\nStep-by-step:\n1. `7 + 7 = 14`\n2. `14 / 7 = 2`\n3. `77 + 7 + 7 + 7 = 98`\n4. `98 + 2 = 100`",
+    "source": "puzzle_1_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "There are a few variations,...",
+    "id": "ee700981"
+  },
+  {
+    "question": "Using 5 zeroes to get the answer as 120.",
+    "answer": "See explanation",
+    "explanation": "You can solve this by using factorials. The factorial of 0 (written as `0!`) is mathematically equal to 1.\nEquation: `(0! + 0! + 0! + 0! + 0!)! = 120`\nStep-by-step:\n1. Replace each `0!` with `1`: `(1 + 1 + 1 + 1 + 1)!`\n2. Sum the inside: `5!`\n3. Calculate 5 factorial: `5 * 4 * 3 * 2 * 1 = 120`",
+    "source": "puzzle_1_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "You can solve this by...",
+    "id": "578df656"
+  },
+  {
+    "question": "Prove that 62 - 63 = 1. (You can change the place of only one number).",
+    "answer": "See explanation",
+    "explanation": "Move the `6` in `62` slightly upward to make it an exponent (power), turning it into `2^6` (two to the power of six).\n`2^6 - 63 = 1`\nSince `2^6 = 64`, the equation becomes `64 - 63 = 1`, which is correct.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Move the `6` in `62`...",
+    "id": "511bb64a"
+  },
+  {
+    "question": "You have 10 boxes of balls (each ball weighing exactly 10 gm) with one box with defective balls (each one of the defective balls weighs 9 gm). You are given an electronic weighing machine and only one chance at it. How will you find out which box has the defective balls?",
+    "answer": "See explanation",
+    "explanation": "You can find the defective box by weighing a specific combination of balls. \nTake 1 ball from the 1st box, 2 balls from the 2nd box, 3 balls from the 3rd box, and so on, up to 10 balls from the 10th box.\nPlace all these 55 balls on the weighing scale. \n* If all balls were normal (10 gm each), the total weight would be exactly `55 * 10 = 550 gm`. \n* Since one box has defective balls (weighing 1 gm less each), the total weight will be less than 550 gm. \nTo find the defective box, simply subtract the actual weight shown on the scale from 550. The difference will exactly match the number of the defective box. \n(For example, if the scale shows 543 gm, `550 - 543 = 7`, meaning the 7th box is defective).",
+    "source": "puzzle_2_explanations.md",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "You can find the defective...",
+    "id": "4411eb3c"
+  },
+  {
+    "question": "Postman Pat delivers the mail in the small village Ten houses... Which two houses did he not deliver to?",
+    "answer": "See explanation",
+    "explanation": "Let's break this down into simple steps:",
+    "source": "puzzle_2_explanations.md",
+    "category": "Age Puzzles",
+    "hint": "Let's break this down into...",
+    "id": "5b63390b"
+  },
+  {
+    "question": "Using five 9 make it 1000?",
+    "answer": "See explanation",
+    "explanation": "`999 + (9 / 9) = 1000`",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "`999 + (9 / 9)...",
+    "id": "2f9cf855"
+  },
+  {
+    "question": "Using five 5 have to make 37?",
+    "answer": "See explanation",
+    "explanation": "You can use factorials (where `5! = 5 * 4 * 3 * 2 * 1 = 120`).\nEquation: `(5! + 5! - 55) / 5 = 37`\nStep-by-step:\n1. `120 + 120 = 240`\n2. `240 - 55 = 185`\n3. `185 / 5 = 37`\nThis uses exactly five 5's: two factorials, one 55, and one divided by 5.",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "You can use factorials (where...",
+    "id": "f40b997b"
+  },
+  {
+    "question": "Using four 7 you have to make 100.",
+    "answer": "See explanation",
+    "explanation": "You can achieve this using decimals. \nEquation: `77 / .77 = 100`",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "You can achieve this using...",
+    "id": "c453cc18"
+  },
+  {
+    "question": "By Using seven 7 can you get 98?",
+    "answer": "See explanation",
+    "explanation": "You can easily make 98 with five 7s (`77 + 7 + 7 + 7 = 98`). To satisfy the requirement of exactly seven 7s without changing the value, you can multiply the entire equation by `(7 / 7)` which equals 1.\nEquation: `(77 + 7 + 7 + 7) * (7 / 7) = 98`",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "You can easily make 98...",
+    "id": "35eac5f8"
+  },
+  {
+    "question": "Using eight 8 you have to make 1000.",
+    "answer": "See explanation",
+    "explanation": "`888 + 88 + 8 + 8 + 8 = 1000`",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "`888 + 88 + 8...",
+    "id": "867f8498"
+  },
+  {
+    "question": "2 fathers and 2 sons go fishing. Each of them catches one fish, So, why do they bring home only 3 fish?",
+    "answer": "See explanation",
+    "explanation": "Because there are only 3 people on the trip: A grandfather, a father, and a son. \n* The grandfather is a father. \n* The father is both a father (to his son) and a son (to the grandfather). \n* The son is a son. \nThis yields exactly 2 fathers and 2 sons, but only 3 individuals in total.",
+    "source": "puzzle_2_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Because there are only 3...",
+    "id": "ebc47d25"
+  }
+]

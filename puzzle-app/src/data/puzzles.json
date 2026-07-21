@@ -1,0 +1,1172 @@
+[
+  {
+    "question": "Using two 8's and two 3's to get the answer as 24.",
+    "answer": "24",
+    "explanation": "You can achieve 24 by using fractions.\nEquation: `8 / (3 - (8 / 3))`\nStep-by-step:\n1. `8 / 3` = 2.666...\n2. `3 - (8 / 3)` = `9/3 - 8/3` = `1/3`\n3. `8 / (1/3)` = `8 * 3` = **24**",
+    "source": "puzzle_1_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "db1fe37d"
+  },
+  {
+    "question": "A farmer eats 100 apples for 5 days, every day he ate 6 apples more than the previous day. How many apples did he ate in the first day?",
+    "answer": "8",
+    "explanation": "Let `x` be the number of apples eaten on the first day.\nThe sequence of apples eaten over the 5 days is: `x`, `x+6`, `x+12`, `x+18`, `x+24`.\nSum of all apples = `x + (x+6) + (x+12) + (x+18) + (x+24) = 100`\n`5x + 60 = 100`\n`5x = 40`\n`x = 8`\nThe farmer ate 8 apples on the first day.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "2d3237d1"
+  },
+  {
+    "question": "Consider there are 10 soldiers on the one side of the river...",
+    "answer": "10 times",
+    "explanation": "To get one soldier across while returning the boat to the original side, follow this sequence:\n1. Both boys row across the river.\n2. One boy gets out, and the other boy rows the boat back.\n3. The boy gets out, and one soldier gets in and rows across.\n4. The soldier gets out, and the first boy (who was waiting on the other side) rows the boat back.\nAt the end of this cycle, exactly **one soldier** has crossed, and both boys are back on the starting side with the boat. Repeat this process **10 times** to get all 10 soldiers across.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "212bd395"
+  },
+  {
+    "question": "There are two candles which can burn in one hour each. You don't have stop watch or scale to measure. How you measure 90 and 45 minutes?",
+    "answer": "\"Similar to the rope problem\"",
+    "explanation": "The note correctly relates it to the classic \"burning rope\" logic. Here is the exact method:\n* **To measure 45 minutes:** Light Candle A at **both ends** and Candle B at **one end**. Candle A will burn out completely in 30 minutes. At the exact moment Candle A burns out, light the other end of Candle B. Candle B (which had 30 minutes of wax left) will now burn out twice as fast, taking 15 minutes. `30 + 15 = 45 minutes`.\n* **To measure 90 minutes:** Light Candle A at **one end**. When it completely burns out (60 minutes), immediately light Candle B at **both ends**. Candle B will burn out in 30 minutes. `60 + 30 = 90 minutes`.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "be582e56"
+  },
+  {
+    "question": "The day before yesterday my age was 21, Next year my age will be 24. When is my birthday?",
+    "answer": "Next year (on Dec 31):",
+    "explanation": "The person's birthday is **December 31st**, and today's date is **January 1st**.\n* **The day before yesterday (Dec 30):** The person was 21.\n* **Yesterday (Dec 31):** It was their birthday, so they turned 22.\n* **This year (on Dec 31):** They will turn 23.\n* **Next year (on Dec 31):** They will turn 24.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "05d58ca7"
+  },
+  {
+    "question": "Using seven 7's to get the answer as 100.",
+    "answer": "100",
+    "explanation": "There are a few variations, but one of the most elegant using exactly seven 7's is:\n`77 + 7 + 7 + 7 + (7 + 7) / 7 = 100`\nStep-by-step:\n1. `7 + 7 = 14`\n2. `14 / 7 = 2`\n3. `77 + 7 + 7 + 7 = 98`\n4. `98 + 2 = 100`",
+    "source": "puzzle_1_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "ee700981"
+  },
+  {
+    "question": "Using 5 zeroes to get the answer as 120.",
+    "answer": "120",
+    "explanation": "You can solve this by using factorials. The factorial of 0 (written as `0!`) is mathematically equal to 1.\nEquation: `(0! + 0! + 0! + 0! + 0!)! = 120`\nStep-by-step:\n1. Replace each `0!` with `1`: `(1 + 1 + 1 + 1 + 1)!`\n2. Sum the inside: `5!`\n3. Calculate 5 factorial: `5 * 4 * 3 * 2 * 1 = 120`",
+    "source": "puzzle_1_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "578df656"
+  },
+  {
+    "question": "Prove that 62 - 63 = 1. (You can change the place of only one number).",
+    "answer": "Move the 6 upward to make it an exponent (2^6)",
+    "explanation": "Move the `6` in `62` slightly upward to make it an exponent (power), turning it into `2^6` (two to the power of six).\n`2^6 - 63 = 1`\nSince `2^6 = 64`, the equation becomes `64 - 63 = 1`, which is correct.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "511bb64a"
+  },
+  {
+    "question": "Using 8 straight lines to draw 2 squares and 4 equilateral triangle.",
+    "answer": "Square Pyramid",
+    "explanation": "This is a trick question regarding geometry and dimensions. \n* **2D Interpretation (Typo in original):** If you draw a large square (4 lines) and connect the midpoints of its sides with 4 more lines, you create a smaller inner square (rotated like a diamond). This uses 8 lines and creates 2 squares and 4 triangles at the corners (though they are *right* triangles, not equilateral). \n* **3D Interpretation:** A **Square Pyramid** has 8 edges (lines). The base is 1 square, and the 4 sides are 4 equilateral triangles. The \"2 squares\" in the prompt might be a typo for 1 square, or it refers to viewing the pyramid from a 2D top-down perspective where the outer perimeter and the vertex projection conceptually form shapes.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer is 14 characters long and starts with 'S'.",
+    "id": "e8f13d6b"
+  },
+  {
+    "question": "Prove that one half of 12 is 7.",
+    "answer": "VII",
+    "explanation": "Write the number 12 in Roman numerals: **XII**\nIf you draw a horizontal line cutting the numeral in half horizontally, the top half leaves **VII**, which is the Roman numeral for 7.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer is 3 characters long and starts with 'V'.",
+    "id": "fd6a7ab0"
+  },
+  {
+    "question": "How many squares in a chess board?",
+    "answer": "204 squares",
+    "explanation": "A chessboard is an 8x8 grid. To find the total number of squares of all sizes (1x1, 2x2, 3x3, etc.), you sum the squares of the numbers from 1 to 8:\n`1² + 2² + 3² + 4² + 5² + 6² + 7² + 8²`\n`1 + 4 + 9 + 16 + 25 + 36 + 49 + 64 = 204`\nThere are **204 squares** in total.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Geometry & Spatial",
+    "hint": "The answer contains numbers/math.",
+    "id": "d9ceec7d"
+  },
+  {
+    "question": "Draw 10 straight lines using 9 dots. (Each line should touch exactly 3 dots).",
+    "answer": "triangle with a center point and intersecting altitudes",
+    "explanation": "This cannot be solved by placing the 9 dots in a standard 3x3 square grid (which only yields 8 lines of 3). Instead, the dots must be arranged in a specific geometric pattern. One common solution is placing the dots in the shape of a **triangle with a center point and intersecting altitudes**, or arranging them on the intersections of a geometric star. By spacing the dots strategically at these intersecting nodes, you can draw exactly 10 lines that each pass through 3 dots.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "6fde37ca"
+  },
+  {
+    "question": "A set of football matches is to be organized in a \"round-robin\" fashion... If 21 matches are totally played, how many teams participated?",
+    "answer": "7 teams",
+    "explanation": "In a round-robin tournament, the formula for total matches is `n * (n - 1) / 2`, where `n` is the number of teams.\n`n * (n - 1) / 2 = 21`\n`n² - n = 42`\n`n² - n - 42 = 0`\nFactoring the quadratic equation: `(n - 7)(n + 6) = 0`\nSince the number of teams must be positive, `n = 7`.\nThere were **7 teams** participating.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "da6665f4"
+  },
+  {
+    "question": "What number should replace the question mark?",
+    "answer": "55",
+    "explanation": "The original document lacks the visual sequence or diagram needed to calculate the answer. However, based on the provided answer of **55**, it is likely a sequence-based logic puzzle (such as a Fibonacci sequence, arithmetic progression, or visual pattern sum) where the final missing element evaluates to 55.",
+    "source": "puzzle_1_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "e2587975"
+  },
+  {
+    "question": "You have a big barrel full of milk and you have two cups which measures two litres and 5litres... You have to measure exact four litres.",
+    "answer": "4 liters",
+    "explanation": "1. Fill the **2-liter cup** from the barrel and pour it into the empty 5-liter cup. (The 5-liter cup now has 2 liters).\n2. Fill the **2-liter cup** again from the barrel and pour it into the 5-liter cup.\n3. The 5-liter cup now contains exactly **4 liters** of milk (`2 + 2 = 4`). No additional vessels or complex pouring are needed!",
+    "source": "puzzle_1_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "b6cae5a6"
+  },
+  {
+    "question": "You have 10 boxes of balls (each ball weighing exactly 10 gm) with one box with defective balls (each one of the defective balls weighs 9 gm). You are given an electronic weighing machine and only one chance at it. How will you find out which box has the defective balls?",
+    "answer": "Subtract the actual scale reading from 550 to get the defective box number.",
+    "explanation": "You can find the defective box by weighing a specific combination of balls. \nTake 1 ball from the 1st box, 2 balls from the 2nd box, 3 balls from the 3rd box, and so on, up to 10 balls from the 10th box.\nPlace all these 55 balls on the weighing scale. \n* If all balls were normal (10 gm each), the total weight would be exactly `55 * 10 = 550 gm`. \n* Since one box has defective balls (weighing 1 gm less each), the total weight will be less than 550 gm. \nTo find the defective box, simply subtract the actual weight shown on the scale from 550. The difference will exactly match the number of the defective box. \n(For example, if the scale shows 543 gm, `550 - 543 = 7`, meaning the 7th box is defective).",
+    "source": "puzzle_2_explanations.md",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "4411eb3c"
+  },
+  {
+    "question": "You have three jars that are all mislabelled. One contains apples, another has grapes, and the third has a mix of both. Now you are allowed to open any one jar and you can able to see one fruit... How could you fix the labels on the jars?",
+    "answer": "Grapes",
+    "explanation": "Open the jar labelled **\"Mix\"**. \nSince you know *all* jars are mislabelled, the jar labelled \"Mix\" cannot actually contain the mix. It must contain either only apples or only grapes. \n* If you pull out an **Apple**, you know this jar contains only Apples. Now you have two jars left, labelled \"Apples\" and \"Grapes\". The one labelled \"Grapes\" cannot be Grapes (since it's mislabelled), and it cannot be Apples (since you just found the Apples). Therefore, the jar labelled \"Grapes\" must be the **Mix**. That leaves the jar labelled \"Apples\" to be the **Grapes**.\n* The same logic applies inversely if you pull out a Grape from the \"Mix\" jar.",
+    "source": "puzzle_2_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer is 6 characters long and starts with 'G'.",
+    "id": "32b4a8e9"
+  },
+  {
+    "question": "You have a set of 3 light switches outside a closed door. One of them controls the light inside the room... How would you determine which of the three light switches controls the light inside the room?",
+    "answer": "Switch 3",
+    "explanation": "1. Turn **Switch 1** ON and leave it on for about 5–10 minutes.\n2. Turn **Switch 1** OFF and immediately turn **Switch 2** ON.\n3. Leave **Switch 3** OFF.\n4. Now, enter the room.\n* If the light is **ON**, it is controlled by **Switch 2**.\n* If the light is **OFF** but the bulb is **WARM** to the touch, it is controlled by **Switch 1** (which was on long enough to heat it up).\n* If the light is **OFF** and the bulb is **COLD**, it is controlled by **Switch 3**.",
+    "source": "puzzle_2_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "65891b94"
+  },
+  {
+    "question": "Postman Pat delivers the mail in the small village Ten houses... Which two houses did he not deliver to?",
+    "answer": "Houses 2 and 8 (Depends on the full steps)",
+    "explanation": "Let's break this down into simple steps:",
+    "source": "puzzle_2_explanations.md",
+    "category": "Age Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "5b63390b"
+  },
+  {
+    "question": "There is a Six digit number and the sum of the digits is 43. Conditions: It may be a square number, It may be a cube number, the value under 500000. Exactly two are true. Find the number?",
+    "answer": "499,849",
+    "explanation": "Any number's digital root is the same as its remainder when divided by 9. The sum of the digits is 43, so `4 + 3 = 7`. This means the number modulo 9 is 7. \nMathematically, a perfect cube modulo 9 can only ever equal 0, 1, or 8. Therefore, the condition \"It may be a cube number\" **must be the false condition**. \nThis means the number is definitely a perfect square and is definitely under 500,000. \nWe need to find a perfect square under 500,000 whose digits sum to 43. Checking perfect squares in the high 400,000s range (to get large digits), we look at `707^2`, which equals **499,849**. \nThe sum of its digits is `4 + 9 + 9 + 8 + 4 + 9 = 43`. \nThe number is **499,849**.",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "4f3502fd"
+  },
+  {
+    "question": "A three digit number consists of 9, 5 and one more number. When these digits are reversed and then subtracted from the original number the answer yielded will be consisting of the same digits arranged yet in a different order. What is the other digit?",
+    "answer": "4",
+    "explanation": "Let the 3-digit number be $N_1 = 100a + 10b + c$, and the reversed number be $N_2 = 100c + 10b + a$. \nWhen you subtract a reversed 3-digit number from the original, the result is always a multiple of 99: $N_1 - N_2 = 99(a - c)$. \nWe know the result must be a 3-digit number containing the digits 9, 5, and the unknown digit `x`. \nLooking at the multiples of 99: 198, 297, 396, **495**, 594, 693, 792, 891. \nThe only multiple of 99 that contains a 9 and a 5 is **495**. \nSince 495 is made of the digits 4, 9, and 5, the missing digit must be **4**. \n(Verification: The original number is 954. Reversed is 459. `954 - 459 = 495`).",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "d204d59e"
+  },
+  {
+    "question": "You are shipwrecked on an island... There are twin brothers... one is honest, and the other always lies. You may ask one of them a single question. What should it be?",
+    "answer": "\"If I asked you which path leads to the safe village, which way would you point?\"",
+    "explanation": "You should ask either brother: **\"If I were to ask your brother which path leads to the safe village, what would he say?\"** \nOnce they answer, you must take the **opposite** path. \n* If you ask the honest brother, he will truthfully tell you the liar's answer (which is a lie pointing to the cannibals). \n* If you ask the liar brother, he will lie about the honest brother's answer (who would point to the village), so the liar will also point to the cannibals. \nIn both cases, they will point to the dangerous path, so you take the other one!\n\n*(Follow-up: What if there is just one person?)*\nAsk: **\"If I asked you which path leads to the safe village, which way would you point?\"**\n* An honest person will point to the safe village.\n* A liar *would* normally point to the cannibals, but since they have to lie about what they *would* do, they are forced by double negation to point to the safe village instead.",
+    "source": "puzzle_2_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "6e1579b6"
+  },
+  {
+    "question": "Use the numbers between 0 to 9... ABCDE * 4 = EDCBA. Find A, B, C, D, E?",
+    "answer": "A = 2, B = 1, C = 9, D = 7, E = 8",
+    "explanation": "1. `A` must be 2. If it were 3 or higher, `30,000 * 4 = 120,000` (which is 6 digits). It cannot be 1 because `4 * E` will always result in an even number, so the last digit `A` must be even. So, `A = 2`.\n2. Since `A = 2`, `E` must be 8 (because `4 * 8 = 32`, ending in 2). \n3. Now we have `2BCD8 * 4 = 8DCB2`. Since `4 * 2 = 8` exactly, there is no carryover from the thousands place, meaning `B` must be small enough that `4 * B` is less than 10. `B` could be 0, 1, or 2, but since digits are unique, `B = 1` or `0`.\n4. Working through the multiplication (`4 * D + 3 ends in B`) and testing `B = 1`, we find `D = 7`.\n5. Testing the remaining digits yields `C = 9`. \nResult: **A = 2, B = 1, C = 9, D = 7, E = 8**. (21978 * 4 = 87912).",
+    "source": "puzzle_2_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "b0978d6d"
+  },
+  {
+    "question": "Using five 9 make it 1000?",
+    "answer": "999 + (9 / 9) = 1000",
+    "explanation": "`999 + (9 / 9) = 1000`",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "2f9cf855"
+  },
+  {
+    "question": "Using five 5 have to make 37?",
+    "answer": "(5! + 5! - 55) / 5 = 37",
+    "explanation": "You can use factorials (where `5! = 5 * 4 * 3 * 2 * 1 = 120`).\nEquation: `(5! + 5! - 55) / 5 = 37`\nStep-by-step:\n1. `120 + 120 = 240`\n2. `240 - 55 = 185`\n3. `185 / 5 = 37`\nThis uses exactly five 5's: two factorials, one 55, and one divided by 5.",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "f40b997b"
+  },
+  {
+    "question": "Using four 7 you have to make 100.",
+    "answer": "77 / .77 = 100",
+    "explanation": "You can achieve this using decimals. \nEquation: `77 / .77 = 100`",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "c453cc18"
+  },
+  {
+    "question": "By Using seven 7 can you get 98?",
+    "answer": "(77 + 7 + 7 + 7) * (7 / 7) = 98",
+    "explanation": "You can easily make 98 with five 7s (`77 + 7 + 7 + 7 = 98`). To satisfy the requirement of exactly seven 7s without changing the value, you can multiply the entire equation by `(7 / 7)` which equals 1.\nEquation: `(77 + 7 + 7 + 7) * (7 / 7) = 98`",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "35eac5f8"
+  },
+  {
+    "question": "Using eight 8 you have to make 1000.",
+    "answer": "888 + 88 + 8 + 8 + 8 = 1000",
+    "explanation": "`888 + 88 + 8 + 8 + 8 = 1000`",
+    "source": "puzzle_2_explanations.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "867f8498"
+  },
+  {
+    "question": "2 fathers and 2 sons go fishing. Each of them catches one fish, So, why do they bring home only 3 fish?",
+    "answer": "There are only 3 people: A grandfather, a father, and a son.",
+    "explanation": "Because there are only 3 people on the trip: A grandfather, a father, and a son. \n* The grandfather is a father. \n* The father is both a father (to his son) and a son (to the grandfather). \n* The son is a son. \nThis yields exactly 2 fathers and 2 sons, but only 3 individuals in total.",
+    "source": "puzzle_2_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "ebc47d25"
+  },
+  {
+    "question": "What goes up the chimney down, but can't go down the chimney up?",
+    "answer": "An umbrella.\n* **Explanation:** You can carry a closed (down) umbrella up through a chimney, but you cannot pull an open (up) umbrella down through it because it would get stuck.",
+    "explanation": "You can carry a closed (down) umbrella up through a chimney, but you cannot pull an open (up) umbrella down through it because it would get stuck.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "a28a437e"
+  },
+  {
+    "question": "It happens once in a minute, twice in a week, and once in a year? What is it?",
+    "answer": "The letter 'e'.\n* **Explanation:** Count the 'e's in the words: minüt**e** (1), w**ee**k (2), y**e**ar (1).",
+    "explanation": "Count the 'e's in the words: minüt**e** (1), w**ee**k (2), y**e**ar (1).",
+    "source": "puzzle_3_explanations.md",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "79925255"
+  },
+  {
+    "question": "What has four legs in the evening, two legs in the afternoon, and three legs in the evening?",
+    "answer": "A human.\n* **Explanation:** This is a slight variation/typo of the classic \"Riddle of the Sphinx\" which usually says \"morning\" instead of the first \"evening\". It represents the stages of life: crawling on all fours as a baby (morning/early life), walking on two legs as an adult (afternoon/mid-life), and using a cane as a third leg in old age (evening/late life).",
+    "explanation": "This is a slight variation/typo of the classic \"Riddle of the Sphinx\" which usually says \"morning\" instead of the first \"evening\". It represents the stages of life: crawling on all fours as a baby (morning/early life), walking on two legs as an adult (afternoon/mid-life), and using a cane as a third leg in old age (evening/late life).",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "0e9dc2e4"
+  },
+  {
+    "question": "Imagine that you need to put a coin into an empty bottle and then insert a cork into the neck. Is there a way to remove the coin without taking out the cork or breaking the bottle?",
+    "answer": "Push the cork into the bottle.\n* **Explanation:** Since you can't take the cork *out*, you can push it *in* and then simply shake the coin out of the neck.",
+    "explanation": "Since you can't take the cork *out*, you can push it *in* and then simply shake the coin out of the neck.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "95c66d6d"
+  },
+  {
+    "question": "I live, yet don't breathe, I am freezing. I am never thirsty, but I always drink. WHAT AM I?",
+    "answer": "A fish.\n* **Explanation:** Fish are alive but do not breathe air (they extract oxygen from water), they are cold-blooded, and they are constantly taking in water. (This is very similar to Gollum's riddle in *The Hobbit*).",
+    "explanation": "Fish are alive but do not breathe air (they extract oxygen from water), they are cold-blooded, and they are constantly taking in water. (This is very similar to Gollum's riddle in *The Hobbit*).",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "d1c731d6"
+  },
+  {
+    "question": "I am a vicious man-killer when I am angry but I am gentle and calm when I am happy. I can be a home pet but my fangs don't suit the job. I have a legend about me but I know it might not be true. I may look scary but I am not really that scary. I may walk into your garden but then I would tell a lie. What am I?",
+    "answer": "A snake (or specifically a garden snake).\n* **Explanation:** Some snakes are dangerous (\"man-killer\", venomous fangs), while others are kept as pets. There are many legends about them. However, a snake cannot \"walk\" into your garden because it has no legs—so claiming to walk is a \"lie.\"",
+    "explanation": "Some snakes are dangerous (\"man-killer\", venomous fangs), while others are kept as pets. There are many legends about them. However, a snake cannot \"walk\" into your garden because it has no legs—so claiming to walk is a \"lie.\"",
+    "source": "puzzle_3_explanations.md",
+    "category": "Speed, Distance & Time",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "6af8ca2d"
+  },
+  {
+    "question": "When you don't have it you want it, but when you do have it you want to share it, but you have to keep it. What is it?",
+    "answer": "A secret.\n* **Explanation:** When you are left out, you want to know the secret. When you know it, human nature makes you want to gossip/share it. However, to truly be a secret, you must keep it to yourself.",
+    "explanation": "When you are left out, you want to know the secret. When you know it, human nature makes you want to gossip/share it. However, to truly be a secret, you must keep it to yourself.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "b85292d4"
+  },
+  {
+    "question": "What has three feet, but no toes?",
+    "answer": "A yardstick (or a yard).\n* **Explanation:** In imperial measurements, there are 3 feet in 1 yard.",
+    "explanation": "In imperial measurements, there are 3 feet in 1 yard.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "c19f20cd"
+  },
+  {
+    "question": "What's black and white and red (read) all over?",
+    "answer": "A newspaper.\n* **Explanation:** It is printed in black and white ink, and it is \"read\" (sounds like the color red) by people.",
+    "explanation": "It is printed in black and white ink, and it is \"read\" (sounds like the color red) by people.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "190719ed"
+  },
+  {
+    "question": "Mary's father has five daughters: 1. Nana, 2. Nene, 3. Nini, 4. Nono. What is the name of the fifth daughter?",
+    "answer": "Mary.\n* **Explanation:** The riddle states right at the beginning that it is \"Mary's father\". Therefore, Mary is one of the daughters.",
+    "explanation": "The riddle states right at the beginning that it is \"Mary's father\". Therefore, Mary is one of the daughters.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Lateral Thinking Riddles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "ff85f0e9"
+  },
+  {
+    "question": "Give me food, and I will live; give me water, and I will die. What am I?",
+    "answer": "Fire.\n* **Explanation:** Fire needs \"food\" (fuel/wood) to keep burning, but throwing water on it will extinguish (\"kill\") it.",
+    "explanation": "Fire needs \"food\" (fuel/wood) to keep burning, but throwing water on it will extinguish (\"kill\") it.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "b84c0cf0"
+  },
+  {
+    "question": "I'm full of air but can't breathe. What am I?",
+    "answer": "A balloon (or a tire).\n* **Explanation:** Both are inflated with air but are inanimate objects.",
+    "explanation": "Both are inflated with air but are inanimate objects.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "0fbded60"
+  },
+  {
+    "question": "What gets whiter the dirtier that it gets?",
+    "answer": "A chalkboard (or a blackboard).\n* **Explanation:** The more you write on a traditional blackboard with chalk (making it \"dirty\" with dust), the whiter it becomes.",
+    "explanation": "The more you write on a traditional blackboard with chalk (making it \"dirty\" with dust), the whiter it becomes.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "24a8f7d8"
+  },
+  {
+    "question": "My first is in tea but not in leaf, My second is in teapot and also in teeth, My third is in caddy but not in cosy, My fourth is in cup but not in rosy, My fifth is in herbal and also in health, My sixth is in peppermint and always in wealth, My last is in drink, so what can I be? I’m there in a classroom, do you listen to me?",
+    "answer": "A TEACHER.\n* **Explanation:** This is an acrostic puzzle:\n    * **T** (in Tea, not in leaf)\n    * **E** (in tEapot and tEEth)\n    * **A** (in cAddy, not in cosy)\n    * **C** (in Cup, not in rosy)\n    * **H** (in Herbal and HealtH)\n    * **E** (in pEppErmint and wEalth)\n    * **R** (in dRink)\n    * A \"TEACHER\" is in a classroom and you should listen to them!",
+    "explanation": "This is an acrostic puzzle:\n    * **T** (in Tea, not in leaf)\n    * **E** (in tEapot and tEEth)\n    * **A** (in cAddy, not in cosy)\n    * **C** (in Cup, not in rosy)\n    * **H** (in Herbal and HealtH)\n    * **E** (in pEppErmint and wEalth)\n    * **R** (in dRink)\n    * A \"TEACHER\" is in a classroom and you should listen to them!",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "90918597"
+  },
+  {
+    "question": "As fast as an eagle, as slow as a slug. As tall as a tree, as small as a bug. Sometimes in front, sometimes behind. Never on top, and always aligned. What is it?",
+    "answer": "A shadow.\n* **Explanation:** A shadow changes size and speed depending on the light source and the object it is attached to. It can stretch out tall or shrink down small, and it is always aligned with the object but falls on surfaces around it, not directly on top.",
+    "explanation": "A shadow changes size and speed depending on the light source and the object it is attached to. It can stretch out tall or shrink down small, and it is always aligned with the object but falls on surfaces around it, not directly on top.",
+    "source": "puzzle_3_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "5e1b0157"
+  },
+  {
+    "question": "A thief in ancient times was caught stealing from the king. The usual punishment for the crime was death but the thief begged for mercy. The king decided to be lenient and let the thief choose his own way to die. Which way did the thief choose?",
+    "answer": "Old age.\n* **Explanation:** By choosing to die of old age, the thief cleverly secured a long life instead of an immediate execution.",
+    "explanation": "By choosing to die of old age, the thief cleverly secured a long life instead of an immediate execution.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "96654890"
+  },
+  {
+    "question": "It can't be seen, its owners don't use it and everything has one.",
+    "answer": "A name.\n* **Explanation:** You can't physically see a name (unless written). You rarely use your own name in conversation, but other people use it to refer to you. Everything (objects, people, concepts) has a name.",
+    "explanation": "You can't physically see a name (unless written). You rarely use your own name in conversation, but other people use it to refer to you. Everything (objects, people, concepts) has a name.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "51905125"
+  },
+  {
+    "question": "I'm in a zoo, But not in a jungle, I rarely come in pairs, But I'm in every puzzle. Some think I'm in a xylophone, But, I most certainly am not, You don't see me with a loan, But very strangely in a zealot. I'm in the magical prison of Azkaban. Well, can't you see? I'm in the buzz of a fan. But, my oh my what could I be?",
+    "answer": "The letter 'Z'.\n* **Explanation:** This is a letter riddle:\n    * Present in \"**z**oo\" but not \"jungle\".\n    * Present twice in \"pu**zz**le\".\n    * Some think the 'Z' sound is in xylophone, but it's spelled with an 'X'.\n    * Not in \"loan\", but in \"**z**ealot\".\n    * In \"A**z**kaban\" and \"bu**zz**\".",
+    "explanation": "This is a letter riddle:\n    * Present in \"**z**oo\" but not \"jungle\".\n    * Present twice in \"pu**zz**le\".\n    * Some think the 'Z' sound is in xylophone, but it's spelled with an 'X'.\n    * Not in \"loan\", but in \"**z**ealot\".\n    * In \"A**z**kaban\" and \"bu**zz**\".",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "1e4b8f23"
+  },
+  {
+    "question": "It's been around for millions of years, but it's no more than a month old. What is it?",
+    "answer": "The moon.\n* **Explanation:** The moon is billions of years old astronomically, but its lunar cycle (from \"new moon\" to \"full moon\" and back) takes exactly one month.",
+    "explanation": "The moon is billions of years old astronomically, but its lunar cycle (from \"new moon\" to \"full moon\" and back) takes exactly one month.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "9369783a"
+  },
+  {
+    "question": "\"At night they come without being fetched, And by day they are lost without being stolen.\"",
+    "answer": "Stars.\n* **Explanation:** They naturally appear in the night sky and disappear during the day due to the sun's brightness, not because they are taken away.",
+    "explanation": "They naturally appear in the night sky and disappear during the day due to the sun's brightness, not because they are taken away.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "5dff5051"
+  },
+  {
+    "question": "\"I never was, am always to be, No one ever saw me, nor ever will. And yet I am the confidence of all. To live and breathe on this terrestrial ball.\"",
+    "answer": "Tomorrow (or the future).\n* **Explanation:** Tomorrow never physically exists in the present (\"never was\", \"always to be\"). Once it arrives, it becomes \"today\". Yet, everyone confidently plans for and expects it.",
+    "explanation": "Tomorrow never physically exists in the present (\"never was\", \"always to be\"). Once it arrives, it becomes \"today\". Yet, everyone confidently plans for and expects it.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "e885be51"
+  },
+  {
+    "question": "\"The beginning of eternity. The end of time and space. The beginning of every end, And the end of every place.\"",
+    "answer": "The letter 'e'.\n* **Explanation:** Look at the spelling of the words:\n    * **e**ternity (beginning)\n    * tim**e** and spac**e** (end)\n    * **e**nd (beginning)\n    * plac**e** (end)",
+    "explanation": "Look at the spelling of the words:\n    * **e**ternity (beginning)\n    * tim**e** and spac**e** (end)\n    * **e**nd (beginning)\n    * plac**e** (end)",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "33a572c7"
+  },
+  {
+    "question": "Oft I must strive with wind and wave, Battle them both when under the sea. I feel out the bottom, a foreign land. In lying still I am strong in the strife; If I fail in that they are stronger than I, And wrenching me loose, soon put me to rout. They wish to capture what I must keep. I can master them both if my grip holds out, If the rocks bring succor and lend support, Strength in the struggle. Ask me my name!",
+    "answer": "An anchor.\n* **Explanation:** An anchor rests at the bottom of the sea holding the ship steady. If its grip on the rocks holds, it defeats the wind and waves. If it breaks loose, the ship is pushed away.",
+    "explanation": "An anchor rests at the bottom of the sea holding the ship steady. If its grip on the rocks holds, it defeats the wind and waves. If it breaks loose, the ship is pushed away.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Lateral Thinking Riddles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "698fa51b"
+  },
+  {
+    "question": "When you call my name, I will be gone. What is my name?",
+    "answer": "Silence.\n* **Explanation:** As soon as you speak (call a name), you break the silence.",
+    "explanation": "As soon as you speak (call a name), you break the silence.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Lateral Thinking Riddles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "9ddefc4f"
+  },
+  {
+    "question": "The one who sees me, that's me. Who am I?",
+    "answer": "A reflection (or a mirror).\n* **Explanation:** When you look at your reflection, the person looking back at you is yourself.",
+    "explanation": "When you look at your reflection, the person looking back at you is yourself.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "4e09c538"
+  },
+  {
+    "question": "I am what I am, but if you know what I am, I am no longer what I am. Guess, what am I?",
+    "answer": "A surprise (or a secret).\n* **Explanation:** The essence of a surprise is that it's unknown. Once you figure out what the surprise is, it ceases to be a surprise.",
+    "explanation": "The essence of a surprise is that it's unknown. Once you figure out what the surprise is, it ceases to be a surprise.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "1b3087f8"
+  },
+  {
+    "question": "What goes up, but doesn't go down?",
+    "answer": "Your age.\n* **Explanation:** You continually get older, but you never get younger.",
+    "explanation": "You continually get older, but you never get younger.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "dbea08fd"
+  },
+  {
+    "question": "A woman lived in an apartment building on the seventh floor. Every morning she took the lift to the ground floor and went to her work. But when she came home, she took the lift to the fourth floor and then continued by walking the stairs up. Why would she do that?",
+    "answer": "She is very short (or a little person).\n* **Explanation:** She can only reach high enough on the elevator button panel to press the button for the 4th floor.",
+    "explanation": "She can only reach high enough on the elevator button panel to press the button for the 4th floor.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Speed, Distance & Time",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "94a37947"
+  },
+  {
+    "question": "What does not have weight but is able to let a ship sink?",
+    "answer": "A hole.\n* **Explanation:** A hole is just an empty space (so it weighs nothing), but it allows water into the ship, causing it to sink.",
+    "explanation": "A hole is just an empty space (so it weighs nothing), but it allows water into the ship, causing it to sink.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "303e681e"
+  },
+  {
+    "question": "Who makes it, doesn't tell it. Who gets it, doesn't know it. Who knows what it is, doesn't want it. What is it?",
+    "answer": "Counterfeit money.\n* **Explanation:** The person printing fake money keeps it a secret. The person receiving it usually thinks it's real. But if someone knows it is counterfeit, they won't accept it because it is worthless and illegal.",
+    "explanation": "The person printing fake money keeps it a secret. The person receiving it usually thinks it's real. But if someone knows it is counterfeit, they won't accept it because it is worthless and illegal.",
+    "source": "puzzle_4_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "6bec2f58"
+  },
+  {
+    "question": "The more you take from it, the bigger it becomes.",
+    "answer": "A hole.\n* **Explanation:** When you dig a hole, you are taking away dirt. The more dirt you take away, the bigger the physical hole gets.",
+    "explanation": "When you dig a hole, you are taking away dirt. The more dirt you take away, the bigger the physical hole gets.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "eb95b73e"
+  },
+  {
+    "question": "The beginning of the end, the end of space and the start of eternity. What is it?",
+    "answer": "The letter 'e'.\n* **Explanation:** The letter 'e' is at the beginning of the word \"**e**nd\", at the end of the word \"spac**e**\", and at the start of the word \"**e**ternity\".",
+    "explanation": "The letter 'e' is at the beginning of the word \"**e**nd\", at the end of the word \"spac**e**\", and at the start of the word \"**e**ternity\".",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "8c99d863"
+  },
+  {
+    "question": "Poor people have it, rich people need it and who does not eat it, dies.",
+    "answer": "Nothing.\n* **Explanation:** Poor people have *nothing*. Rich people need *nothing*. If you eat *nothing*, you will eventually starve and die.",
+    "explanation": "Poor people have *nothing*. Rich people need *nothing*. If you eat *nothing*, you will eventually starve and die.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "3535126b"
+  },
+  {
+    "question": "Two ducks before a duck, two ducks behind a duck, and a duck in de middle. How many ducks are there?",
+    "answer": "Three ducks.\n* **Explanation:** They are walking in a single file line (one behind the other). The first duck has two behind it, the last duck has two before it, and the middle duck is sandwiched between the other two.",
+    "explanation": "They are walking in a single file line (one behind the other). The first duck has two behind it, the last duck has two before it, and the middle duck is sandwiched between the other two.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "853e273a"
+  },
+  {
+    "question": "A country far away is called the country of no idea. In this country there live people but no children, they have houses but no cities and villages. The people have cars, but there are no roads. They people are very clean but you won't find a single dustbin in the country of no idea. Why is it called the country of no idea?",
+    "answer": "Because the things that exist there don't contain the letters \"I\" or \"D\" (No I-D-ea).\n* **Explanation:** Look at the spelling of the words. The things that are allowed (people, houses, cars, clean) do not contain the letters 'I' or 'D'. The things that are forbidden (ch**i**l**d**ren, c**i**t**i**es, v**i**llages, roa**d**s, **d**ustb**i**n) all contain either an 'I' or a 'D' (or both).",
+    "explanation": "Look at the spelling of the words. The things that are allowed (people, houses, cars, clean) do not contain the letters 'I' or 'D'. The things that are forbidden (ch**i**l**d**ren, c**i**t**i**es, v**i**llages, roa**d**s, **d**ustb**i**n) all contain either an 'I' or a 'D' (or both).",
+    "source": "puzzle_5_explanations.md",
+    "category": "Age Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "567bbef7"
+  },
+  {
+    "question": "You can be the last joining person, but you will never be first. What is it?",
+    "answer": "Second place (or a follower).\n* **Explanation:** If you are the second person to join a group or finish a race, you are momentarily the \"last\" person to arrive, but you can never be the \"first\" because someone else already beat you to it.",
+    "explanation": "If you are the second person to join a group or finish a race, you are momentarily the \"last\" person to arrive, but you can never be the \"first\" because someone else already beat you to it.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "25555729"
+  },
+  {
+    "question": "I cannot be felt, seen or touched; Yet I can be found in everybody; My existence is always in debate; Yet I have my own style of music. What Am I?",
+    "answer": "A soul.\n* **Explanation:** You can't physically touch a soul, and philosophers and scientists debate its existence. However, \"soul music\" is a very popular musical genre.",
+    "explanation": "You can't physically touch a soul, and philosophers and scientists debate its existence. However, \"soul music\" is a very popular musical genre.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "13296751"
+  },
+  {
+    "question": "What has four legs and only one foot?",
+    "answer": "A bed.\n* **Explanation:** A traditional bed frame has four legs on the floor, but it only has one \"foot\" (the footboard or the foot of the bed).",
+    "explanation": "A traditional bed frame has four legs on the floor, but it only has one \"foot\" (the footboard or the foot of the bed).",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "e192a543"
+  },
+  {
+    "question": "Who makes it, has no need of it. Who buys it, has no use for it. Who uses it can neither see nor feel it.",
+    "answer": "A coffin.\n* **Explanation:** The person who builds the coffin sells it. The person who buys it is buying it for a loved one. The person who actually uses it is deceased, so they can't see or feel it.",
+    "explanation": "The person who builds the coffin sells it. The person who buys it is buying it for a loved one. The person who actually uses it is deceased, so they can't see or feel it.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "ee29fbd7"
+  },
+  {
+    "question": "My love, when I gaze on thy beautiful face, Careering along, yet always in place. The thought has often come into my mind, If I ever shall see thy glorious behind. What am I talking about?",
+    "answer": "The moon.\n* **Explanation:** Due to tidal locking, the Moon always shows the exact same \"face\" to Earth. We never get to see its \"behind\" (the dark/far side) from the ground.",
+    "explanation": "Due to tidal locking, the Moon always shows the exact same \"face\" to Earth. We never get to see its \"behind\" (the dark/far side) from the ground.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "2dcaaaea"
+  },
+  {
+    "question": "What holds water yet is full of holes?",
+    "answer": "A sponge.\n* **Explanation:** A sponge is porous and covered in holes, but it is designed to absorb and hold liquid.",
+    "explanation": "A sponge is porous and covered in holes, but it is designed to absorb and hold liquid.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Lateral Thinking Riddles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "9ff6a05a"
+  },
+  {
+    "question": "What belongs to you but others use it more than you do?",
+    "answer": "Your name.\n* **Explanation:** It is your identifying name, but your friends and family say it out loud far more often than you do.",
+    "explanation": "It is your identifying name, but your friends and family say it out loud far more often than you do.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Lateral Thinking Riddles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "c54d1280"
+  },
+  {
+    "question": "Tim owns a pocket knife with five different tools. It has a corkscrew, a bottle opener, tweezers, a screwdriver and something else. What?",
+    "answer": "A knife (or a blade).\n* **Explanation:** The object is specifically called a pocket *knife*, so the fifth undocumented tool is the actual knife blade itself.",
+    "explanation": "The object is specifically called a pocket *knife*, so the fifth undocumented tool is the actual knife blade itself.",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "3b72521b"
+  },
+  {
+    "question": "You've got two jars, one of them fits exactly 5 litres, the other one fits exactly 3 litres. How could you get exactly 4 litres with these two jars? It is allowed to spoil some water.",
+    "answer": "Use a sequence of pouring between the jars.\n* **Explanation:** \n    1. Fill the 5L jar to the top. *(You have 5L and 0L)*\n    2. Pour water from the 5L jar into the 3L jar until the 3L jar is full. *(You now have 2L in the big jar and 3L in the small jar).*\n    3. Empty the 3L jar completely. *(You have 2L and 0L).*\n    4. Pour the 2L of water from the big jar into the small jar. *(You have 0L and 2L).*\n    5. Fill the 5L jar to the top again. *(You have 5L and 2L).*\n    6. Carefully pour water from the 5L jar into the 3L jar until it is full. Since the 3L jar already has 2L in it, it will only take exactly **1L** to fill it. \n    7. Because you poured exactly 1L out of the 5L jar, you are now left with exactly **4 Litres** in the big jar!",
+    "explanation": "1. Fill the 5L jar to the top. *(You have 5L and 0L)*\n    2. Pour water from the 5L jar into the 3L jar until the 3L jar is full. *(You now have 2L in the big jar and 3L in the small jar).*\n    3. Empty the 3L jar completely. *(You have 2L and 0L).*\n    4. Pour the 2L of water from the big jar into the small jar. *(You have 0L and 2L).*\n    5. Fill the 5L jar to the top again. *(You have 5L and 2L).*\n    6. Carefully pour water from the 5L jar into the 3L jar until it is full. Since the 3L jar already has 2L in it, it will only take exactly **1L** to fill it. \n    7. Because you poured exactly 1L out of the 5L jar, you are now left with exactly **4 Litres** in the big jar!",
+    "source": "puzzle_5_explanations.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "b1b70ae7"
+  },
+  {
+    "question": "In a particular cricket match today, a batsman was out for 26 runs. After this match, his batting average for this year has increased from 15 runs to 16 runs. How much runs he must have scored in this match to increase his batting average to 20 runs?",
+    "answer": "The batsman must have scored **70 runs** in this match to increase his batting average to 20 runs.",
+    "explanation": "To solve this, we need to determine how many matches (innings) the batsman had played before today's match. \n\n**Step 1: Set up the equations**\n*   Let $n$ be the number of innings played before today.\n*   Let $R$ be the total runs scored before today.\n*   Before today, his average was 15:  \n    $$R / n = 15$$  (which means $$R = 15n$$)\n*   Today, he scored 26 runs and got out. This increases his total innings to $n + 1$ and his total runs to $R + 26$. His new average is 16:\n    $$(R + 26) / (n + 1) = 16$$\n\n**Step 2: Solve for $n$ (past innings)**\nSubstitute the first equation ($$R = 15n$$) into the second equation:\n*   $$(15n + 26) / (n + 1) = 16$$\n*   $$15n + 26 = 16(n + 1)$$\n*   $$15n + 26 = 16n + 16$$\n*   $$26 - 16 = 16n - 15n$$\n*   **$$10 = n$$**\n\nSo, the batsman had played **10 innings** prior to today's match.\nThis means his total runs before today were $$15 \\times 10 = 150$$ runs.\n\n**Step 3: Calculate the required runs for a 20 average**\nThe question asks what score ($X$) he would have needed in today's match (which is his 11th inning) to bring his new average up to 20.\n*   Total innings = 10 past + 1 current = 11 innings.\n*   Desired Average = 20.\n*   Required Total Runs = 11 innings $\\times$ 20 average = **220 total runs**.\n\nSince he already had 150 runs before this match, the hypothetical runs ($X$) he needed to score today is:\n*   $$X = 220 \\text{ (required total)} - 150 \\text{ (past total)}$$\n*   $$X = 70$$",
+    "source": "batting_average_problem.md",
+    "category": "Age Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "319c7051"
+  },
+  {
+    "question": "While enjoying a giddy ride at the carousel Sammy propounded a puzzle which reflects much credit to his mental abilities. \"One third of the number of kids riding ahead of me, added to three-quarter of those riding behind me gives the correct number of children on this Merry-Go-Round\" is the way he puts it; how many riders were there were at this whirling circus?",
+    "answer": "13 riders",
+    "explanation": "Let **$N$** be the total number of children riding on the Merry-Go-Round.\n\nSince a carousel is circular, if Sammy looks ahead of him around the circle, he will see all the other children. Similarly, if he looks behind him around the circle, he will also see all the other children. \n\nTherefore, the number of kids riding \"ahead\" of him is all the other kids, which is **$N - 1$**.\nThe number of kids riding \"behind\" him is also all the other kids, **$N - 1$**.\n\nAccording to Sammy's statement:\n*(One third of kids ahead)* + *(Three-quarters of kids behind)* = *(Total number of children)*\n\nWe can write this as an equation:\n$$\\frac{1}{3}(N - 1) + \\frac{3}{4}(N - 1) = N$$\n\nNow, let's solve for $N$:\n\n1. Factor out $(N - 1)$:\n   $$\\left(\\frac{1}{3} + \\frac{3}{4}\\right)(N - 1) = N$$\n\n2. Find a common denominator to add the fractions:\n   $$\\left(\\frac{4}{12} + \\frac{9}{12}\\right)(N - 1) = N$$\n   $$\\frac{13}{12}(N - 1) = N$$\n\n3. Multiply both sides by 12 to eliminate the denominator:\n   $$13(N - 1) = 12N$$\n   $$13N - 13 = 12N$$\n\n4. Subtract $12N$ from both sides and add 13 to both sides:\n   $$13N - 12N = 13$$\n   $$N = 13$$\n\n**Conclusion:**\nThere were **13** riders at the whirling circus.",
+    "source": "carousel_puzzle.md",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "d892bd66"
+  },
+  {
+    "question": "You have the misfortune to own an unreliable clock. This one gains exactly 15 minutes every hour. It is now showing 3.00 am and you know that it was correct at midnight, when you set it. The clock stopped four hours ago, what is the correct time now?",
+    "answer": "6:24 am",
+    "explanation": "To find the correct time, we first need to determine the real time when the clock stopped.\n\n1. **Understand the rate of the clock:**\n   The clock gains exactly 15 minutes for every real hour that passes. \n   This means for every 60 minutes of real time, the clock advances 75 minutes (1 hour and 15 minutes).\n   Therefore, the ratio of clock time to real time is 75/60 = 1.25.\n   `Clock Time = Real Time * 1.25`\n   `Real Time = Clock Time / 1.25`\n\n2. **Calculate the real time when the clock stopped:**\n   The clock is showing 3:00 am, and it started at midnight.\n   So, the elapsed *clock time* is exactly 3 hours.\n   Real Time elapsed = 3 hours / 1.25 = 2.4 hours.\n   2.4 hours is equal to 2 hours and 24 minutes (since 0.4 * 60 = 24).\n   This means the clock stopped at **2:24 am (real time)**.\n\n3. **Calculate the current correct time:**\n   The problem states the clock stopped 4 hours ago.\n   Current real time = 2:24 am + 4 hours = **6:24 am**.\n\n*(Note: If the problem meant it gains 15 mins for every *clock* hour shown on its face, the clock would have gained 45 mins total, so it stopped at 3:00 - 45 mins = 2:15 am real time, making the current time 6:15 am. However, \"every hour\" standardly refers to actual elapsed time, making 6:24 am the mathematically precise answer).*\n\n## Is the handwritten answer (7:45 am) correct?\n\n**No, 7:45 am is incorrect.** \n\nHowever, we can see exactly how the original solver arrived at 7:45 am by making two common logical mistakes:\n\n1. **Mistake 1 (Calculating total gain based on clock time):** They saw the clock showed 3 hours elapsed (midnight to 3:00 am) and mistakenly used this to calculate the gain: 3 hours × 15 minutes = 45 minutes gained.\n2. **Mistake 2 (Adding instead of subtracting):** They then **added** this 45-minute gain to the 3:00 am clock time to find the \"real\" time it stopped (3:00 am + 45 mins = 3:45 am). This is a fundamental error! If a clock *gains* time, it means it is running *faster* than reality. Therefore, the real time must be *earlier* than what the clock shows, not later.\n3. **Final step:** Finally, they added the 4 hours since the clock stopped to their incorrect 3:45 am time, resulting in **7:45 am** (`3:45 am + 4 hours = 7:45 am`).\n\nIn conclusion, the 7:45 am answer is a result of a math sign error (adding the gained time to the clock instead of realizing the clock is ahead). The actual correct time is **6:24 am**.",
+    "source": "clock_problem.md",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "c6cd1539"
+  },
+  {
+    "question": "$k = 1! + 2! + 3! + 4! + 5! + 6! + 7! + 8!.......+29!$ \nWhat would be the last digit of $K$?",
+    "answer": "3 (Since 5! and above end in 0)",
+    "explanation": "To find the last digit of a sum, we only need to find the last digit of each individual term and add them together. The last digit of a number is its value modulo 10 (the remainder when divided by 10). \n\nLet's calculate the first few factorials and find their last digits:\n*   **$1! = 1$** (last digit is 1)\n*   **$2! = 2 \\times 1 = 2$** (last digit is 2)\n*   **$3! = 3 \\times 2 \\times 1 = 6$** (last digit is 6)\n*   **$4! = 4 \\times 3 \\times 2 \\times 1 = 24$** (last digit is 4)\n\nNow, let's look at $5!$:\n*   **$5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$** (last digit is 0)\n\nNotice that for any $n \\ge 5$, $n!$ will always include both 5 and 2 as factors. Since $5 \\times 2 = 10$, every factorial from $5!$ onwards will be a multiple of 10 and therefore will end in 0. \n\n*   $6! = 720$ (last digit is 0)\n*   $7! = 5040$ (last digit is 0)\n*   ...and so on up to $29!$ (last digit is 0)\n\nWhen we sum all these factorials, all the terms from $5!$ to $29!$ will contribute $0$ to the final last digit. \n\nTherefore, the last digit of $K$ is entirely determined by the sum of the first four terms:\n$$\\text{Sum of first four terms} = 1! + 2! + 3! + 4!$$\n$$\\text{Sum} = 1 + 2 + 6 + 24$$\n$$\\text{Sum} = 33$$\n\nThe last digit of 33 is 3. \n\n**Conclusion:**\nThe last digit of $K$ is **3**.",
+    "source": "factorial_sum_puzzle.md",
+    "category": "Number & Digit Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "41e1af65"
+  },
+  {
+    "question": "There are 100 people standing in a circle. We can number them as 1 to 100. The first person (No1) has a sword. He kills the next person (i.e. No2) and gives the sword to next person (i.e. No3) and this continues until only one survives. Which number survives at the last?",
+    "answer": "73",
+    "explanation": "This is a classic mathematical puzzle known as the **Josephus Problem**. \n\nWhile you could theoretically write out all 100 numbers and cross them out one by one, there is a reliable mathematical formula for this exact scenario (where every second person is eliminated):\n\n1. Find the highest power of 2 that is less than or equal to the total number of people ($N$). Let's call this power of two $2^a$.\n2. Subtract this power of two from the total number of people to find the remainder, which we'll call $L$. So, $L = N - 2^a$.\n3. The position of the sole survivor is given by the formula: **$2L + 1$**.\n\nLet's apply this to our problem where $N = 100$:\n* The powers of 2 are: 1, 2, 4, 8, 16, 32, 64, 128...\n* The highest power of 2 that is less than or equal to 100 is **64** (which is $2^6$).\n* Now we find the remainder ($L$): 100 - 64 = **36**.\n* Finally, we plug $L$ into our survivor formula: 2(36) + 1 = 72 + 1 = **73**.\n\nThe person standing at position **73** is the sole survivor.\n\n## Is the handwritten answer (99) correct?\n\n**No, 99 is incorrect.**\n\nIt is very easy to see why the person who wrote the answer guessed 99. They likely only thought about the **first round** of eliminations around the circle and stopped there.\n\nLet's look at how the first round plays out:\n* 1 kills 2, gives the sword to 3.\n* 3 kills 4, gives the sword to 5.\n* ...\n* 97 kills 98, gives the sword to 99.\n* 99 kills 100.\n\nAt this exact moment, one full loop of the circle has been completed. The person who wrote \"99\" likely stopped here, thinking \"99 struck the last blow of the 100 people, so 99 wins.\" \n\nHowever, the game doesn't stop after one loop! After 99 kills 100, they must pass the sword to the next surviving person in the circle, which is person number 1. Then round 2 begins (1 kills 3, gives the sword to 5, and so on) and this process loops multiple times until only person **73** remains.",
+    "source": "josephus_problem.md",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "0242cb51"
+  },
+  {
+    "question": "A man needs to go through a train tunnel to reach the other side. He starts running through the tunnel in an effort to reach his destination as soon as possible. When he is 1/4th of the way through the tunnel, he hears the train whistle behind him. Assuming the tunnel is not big enough for him and the train, he has to get out of the tunnel in order to survive. We know that the following conditions are true:\na. If he runs back, he will make it out of the tunnel by a whisker.\nb. If he continues running forward, he will still make it out through the other end by a whisker.\nWhat is the speed of the train compared to that of the man?",
+    "answer": "Train is 2 times faster than the man",
+    "explanation": "Let the length of the tunnel be $L$. \nWhen the man hears the whistle, he is at distance **$L/4$** from the entrance of the tunnel. \nLet the man's speed be $v$ and the train's speed be $V$.\n\n**Scenario A: Running Back**\nIf the man runs back to the entrance, he covers a distance of $L/4$. \nThe problem states he makes it out \"by a whisker,\" meaning the train arrives exactly at the tunnel entrance at the exact moment the man reaches it.\nTherefore, the time it takes the man to run $L/4$ is the exact same time it takes the train to reach the entrance from its current position.\n\n**Scenario B: Running Forward**\nNow, imagine what happens if he runs forward instead. \nHe starts at $L/4$ and runs forward. Let's look at the moment he has run another distance of $L/4$, bringing him to the halfway point ($L/2$) of the tunnel.\n\nBecause he just ran a distance of $L/4$, the time that has passed is identical to the time in Scenario A. \nWe already established that in this amount of time, the train reaches the entrance of the tunnel.\nSo, when the man is exactly in the **middle** of the tunnel ($L/2$), the train is exactly at the **entrance**.\n\nFrom this point, they both continue to the exit (the other end of the tunnel):\n*   The man needs to run a distance of **$L/2$** (the remaining half of the tunnel).\n*   The train needs to travel a distance of **$L$** (the full length of the tunnel).\n\nThe problem states that if he runs forward, he makes it out the other end \"by a whisker.\" This means they both arrive at the exit at the exact same time.\n\nSince they arrive simultaneously, and the train has to cover exactly twice the distance ($L$) compared to the man ($L/2$) in the same amount of time, the train must be moving twice as fast.\n\n**Conclusion:**\nThe speed of the train is **twice** the speed of the man ($V = 2v$).",
+    "source": "train_tunnel_puzzle.md",
+    "category": "Speed, Distance & Time",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "34ebba33"
+  },
+  {
+    "question": "Mother, baby and dog standing on a weighing machine and it shows 170 pounds. How much does the baby weigh if the mother weighs 100 pounds more than the combined weight of the baby and the dog, and the dog weighs 60 percent less than the baby?",
+    "answer": "Baby weighs 25 pounds",
+    "explanation": "Let's define the variables for their weights:\n*   **$M$** = Mother's weight\n*   **$B$** = Baby's weight\n*   **$D$** = Dog's weight\n\nFrom the problem description, we can set up the following equations:\n\n1.  **\"Mother, baby and dog standing on a weighing machine and it shows 170 pounds.\"**\n    $$M + B + D = 170$$\n\n2.  **\"...the mother weighs 100 pounds more than the combined weight of the baby and the dog...\"**\n    $$M = 100 + (B + D)$$\n\n3.  **\"...and the dog weighs 60 percent less than the baby\"**\n    $$D = B - 0.60B = 0.40B$$\n\nNow, let's solve the system of equations.\n\nFirst, substitute Equation 2 into Equation 1:\n$$(100 + B + D) + B + D = 170$$\n$$100 + 2B + 2D = 170$$\n$$2B + 2D = 70$$\n$$B + D = 35$$\n\nNext, substitute Equation 3 into our new simplified equation ($B + D = 35$):\n$$B + 0.40B = 35$$\n$$1.40B = 35$$\n$$B = \\frac{35}{1.40}$$\n$$B = 25$$\n\n**Conclusion:**\nThe baby weighs **25 pounds**.",
+    "source": "weighing_machine_problem.md",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "928a7794"
+  },
+  {
+    "question": "A father, his daughter and the family dog stand together on a weighing scale, which reads 260 lbs. The father weighs 120 lbs more than the combined weight of the daughter and the dog, and the dog weighs 75% less than the daughter. How much does the daughter weigh?",
+    "answer": "Daughter = 56 lbs.",
+    "explanation": "Let s = daughter+dog. Father = 120+s. Total: 120+2s=260 → s=70. Dog=0.25×daughter → 1.25×daughter=70 → daughter=56 lbs (dog=14 lbs, father=190 lbs).",
+    "source": "Econ_Systems_Paper",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "9c7d9f06"
+  },
+  {
+    "question": "A solid cube-shaped brick weighs 8 kg. A second cube, made of the same material, has each side exactly twice as long. What is the weight of the larger cube?",
+    "answer": "64 kg.",
+    "explanation": "Weight scales with volume, i.e. the cube of the linear scale factor. Linear factor = 2 → weight factor = 2³ = 8. 8 kg × 8 = 64 kg.",
+    "source": "Econ_Systems_Paper",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "f57a8441"
+  },
+  {
+    "question": "A mixture of two metals weighs 24 g and is worth ₹204. If the weights of the two metals in the mixture are interchanged, it would be worth ₹180. If metal A costs ₹10 per gram, find the weight of metal B in the mixture.",
+    "answer": "9 g.",
+    "explanation": "Let a, b be weights of metal A, B (a+b=24), price of B = p. 10a+pb=204; 10b+pa=180. Adding: (10+p)(24)=384 → p=6. Subtracting: (10−p)(a−b)=24 → 4(a−b)=24 → a−b=6. With a+b=24: a=15, b=9.",
+    "source": "Econ_Systems_Paper",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "de384b5f"
+  },
+  {
+    "question": "Eight years ago, a man was 7 times as old as his daughter. Today he is exactly 3 times as old as her. Find their present ages.",
+    "answer": "Daughter = 12, Man = 36.",
+    "explanation": "Let daughter's age 8 yrs ago = d, man's = 7d. Now: d+8 and 7d+8. 7d+8=3(d+8) → 4d=16 → d=4. Daughter now=12, man=36.",
+    "source": "Econ_Systems_Paper",
+    "category": "Age Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "01a8a508"
+  },
+  {
+    "question": "The day before yesterday, Rita was 40 years old, and next year she will turn 43. If today is January 1st, what is Rita's birthday, and how old is she today?",
+    "answer": "Birthday: 31st December; Rita is 41 today.",
+    "explanation": "For 'day before yesterday' and 'today' to differ by a whole extra year jump, today must be Jan 1 and the birthday Dec 31. Day before yesterday (Dec 30) = 40 (not yet had this year's birthday). Yesterday (Dec 31) she turned 41. Today (Jan 1) she is 41. By the end of this calendar year she turns 42, and 'next year' (the following calendar year) she turns 43.",
+    "source": "Econ_Systems_Paper",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "ffadfd67"
+  },
+  {
+    "question": "A father is currently 4 times as old as his son. In 20 years, he will be exactly twice as old as his son. Find their current ages.",
+    "answer": "Son = 10, Father = 40.",
+    "explanation": "f=4s. f+20=2(s+20) → 4s+20=2s+40 → s=10, f=40.",
+    "source": "Econ_Systems_Paper",
+    "category": "Age Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "588f4ed6"
+  },
+  {
+    "question": "A train 300 m long is crossing a tunnel 3.3 km long at a speed of 60 km/hr. How long does it take for the train to completely cross the tunnel (from the moment the engine enters to the moment the last coach exits)? 3mins26secs",
+    "answer": "3 minutes 36 seconds.",
+    "explanation": "Total distance = 300 m + 3300 m = 3600 m = 3.6 km. Speed = 60 km/hr = 1 km/min. Time = 3.6 min = 3 min 36 sec.",
+    "source": "Econ_Systems_Paper",
+    "category": "Speed, Distance & Time",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "94129483"
+  },
+  {
+    "question": "A man is running through a straight train tunnel. When he is exactly one-third of the way through, he hears a train approaching from behind. If he runs back the way he came, he escapes out of the near end just in time. If instead he keeps running forward, he escapes out of the far end just in time. Find the ratio of the train's speed to the man's speed. 3:1",
+    "answer": "Train's speed = 3 × man's speed.",
+    "explanation": "Let tunnel length L, man's speed v, train speed u=rv, man is fraction f=1/3 through. General result for this classic puzzle: r = 1/(1−2f). With f=1/3: r = 1/(1−2/3) = 3.",
+    "source": "Econ_Systems_Paper",
+    "category": "Speed, Distance & Time",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "fc5aa00c"
+  },
+  {
+    "question": "A monkey climbs 18 feeti  up a pole in the first hour, then slips back 12 feet before he resumes climbing at the start of the next hour. If he begins climbing at 9:00 a.m. and the pole is 84 feet tall, at what time will he first touch the top? 9pm",
+    "answer": "8:00 p.m.",
+    "explanation": "Net gain per hour cycle = 6 ft. Position before each hour's climb: 0,6,12,18,24,30,36,42,48,54,60,66 (after 11 full climb-slip cycles). On the 12th climb he goes from 66 to 66+18=84, exactly reaching the top. The 12th hour begins at 9:00 a.m. + 11 hours = 8:00 p.m.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "bb86b8d3"
+  },
+  {
+    "question": "A train 2 km long moves at a constant speed of 8 km/hr. An athlete on board runs from the engine to the last coach and back to the engine while the train covers exactly 2 km. Find the athlete's running speed relative to the train.  16kmph",
+    "answer": "16 km/hr (relative to the train).",
+    "explanation": "Train covers 2 km at 8 km/hr → takes 15 min (0.25 hr). Athlete's relative speed u satisfies 2L/u = T (goes length L forward and L back relative to train) → u = 2(2)/0.25 = 16 km/hr.",
+    "source": "Econ_Systems_Paper",
+    "category": "Speed, Distance & Time",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "fe7b845d"
+  },
+  {
+    "question": "A mother and her daughter work at the same office. The mother takes 40 minutes to walk there; the daughter covers the same distance in 25 minutes. If the mother leaves home 9 minutes earlier than usual, how soon (measured from when the daughter starts) will the daughter catch up with her?  15mis",
+    "answer": "15 minutes.",
+    "explanation": "Head start distance = mother's rate × 9 min = 9D/40. Relative closing speed = D/25−D/40 = 3D/200 per min. Time = (9D/40) ÷ (3D/200) = 15 minutes.",
+    "source": "Econ_Systems_Paper",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "4e37f6ae"
+  },
+  {
+    "question": "The probability of spotting an ambulance on a highway during a 40-minute period is 0.9375, assuming a uniform probability distribution. What is the probability of spotting an ambulance in any given 10-minute interval? 50%",
+    "answer": "0.5 (50%).",
+    "explanation": "40 min = four 10-min intervals. P(no ambulance in 40 min) = 1−0.9375 = 1/16 = p⁴ → p=1/2. P(ambulance in 10 min) = 1−(1/2) = 0.5.",
+    "source": "Econ_Systems_Paper",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "2bffd6f6"
+  },
+  {
+    "question": "In a town, 4% of adults have a certain disease. A screening test correctly flags 90% of people who actually have the disease as positive, but it also incorrectly flags 5% of healthy people as positive. If a random adult tests positive, what is the probability that they actually have the disease? ~42%",
+    "answer": "≈ 42.9% (3/7).",
+    "explanation": "P(D)=0.04, P(+|D)=0.9, P(+|¬D)=0.05. P(+) = 0.04×0.9 + 0.96×0.05 = 0.036+0.048 = 0.084. P(D|+) = 0.036/0.084 = 3/7 ≈ 0.4286.",
+    "source": "Econ_Systems_Paper",
+    "category": "Probability & Statistics",
+    "hint": "The answer contains numbers/math.",
+    "id": "c77e0f03"
+  },
+  {
+    "question": "A drawer contains socks of 4 colours — red, blue, green and black — with 12 socks of each colour (48 socks total). If you pick 2 socks at random in the dark, what is the probability that they are the same colour? 23%",
+    "answer": "11/47 (≈ 0.234).",
+    "explanation": "P(same colour) = 4×C(12,2) / C(48,2) = 4×66 / 1128 = 264/1128 = 11/47.",
+    "source": "Econ_Systems_Paper",
+    "category": "Probability & Statistics",
+    "hint": "The answer contains numbers/math.",
+    "id": "38ca34e2"
+  },
+  {
+    "question": "A family has two children. You are told that at least one of them is a boy. What is the probability that both children are boys? 1/3",
+    "answer": "1/3.",
+    "explanation": "Equally likely outcomes given at least one boy: {BB, BG, GB} (GG excluded). Only 1 of these 3 equally likely outcomes is BB, so P = 1/3.",
+    "source": "Econ_Systems_Paper",
+    "category": "Probability & Statistics",
+    "hint": "The answer contains numbers/math.",
+    "id": "c0acc0a9"
+  },
+  {
+    "question": "A bag contains 5 red marbles and 7 blue marbles. Two marbles are drawn at random without replacement. What is the probability that both marbles drawn are the same colour? 31/66",
+    "answer": "31/66.",
+    "explanation": "P(both red)+P(both blue) = [C(5,2)+C(7,2)] / C(12,2) = (10+21)/66 = 31/66.",
+    "source": "Econ_Systems_Paper",
+    "category": "Probability & Statistics",
+    "hint": "The answer contains numbers/math.",
+    "id": "5b3a6c63"
+  },
+  {
+    "question": "A batsman's average after a certain number of innings was 20. In his next innings he scored 68 runs and his average rose to 22. How many runs must he score in the innings after that to raise his average to 27?",
+    "answer": "147 runs.",
+    "explanation": "Let average after n innings = 20 (total 20n). After scoring 68: 20n+68=22(n+1) → n=23, so total after 24 innings = 22×24=528. For average 27 after 25 innings: total needed = 27×25=675. Runs needed = 675−528 = 147.",
+    "source": "Econ_Systems_Paper",
+    "category": "Age Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "558647e6"
+  },
+  {
+    "question": "8 workers can build a wall in 15 days, working 6 hours a day. How many days will 6 workers take to build the same wall, working 8 hours a day (assume the same work rate per worker-hour)?",
+    "answer": "15 days.",
+    "explanation": "Total work = 8×15×6 = 720 worker-hours. Days for 6 workers at 8 hrs/day: 720 ÷ (6×8) = 15 days.",
+    "source": "Econ_Systems_Paper",
+    "category": "Averages & Work",
+    "hint": "The answer contains numbers/math.",
+    "id": "07e04e00"
+  },
+  {
+    "question": "Pipe A can fill a tank in 12 hours and Pipe B can fill it in 18 hours. Both pipes are opened together, but Pipe A is shut off 4 hours before the tank is completely full. How long does it take in total to fill the tank?",
+    "answer": "9.6 hours (9 hours 36 minutes).",
+    "explanation": "Let total time = T. Pipe A works (T−4) hrs, Pipe B works T hrs: (T−4)/12 + T/18 = 1. Multiply by 36: 3(T−4)+2T=36 → 5T=48 → T=9.6 hrs.",
+    "source": "Econ_Systems_Paper",
+    "category": "Averages & Work",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "cfed646e"
+  },
+  {
+    "question": "The average score of a class of 40 students is 62. If the top 5 students (who averaged 90) are excluded, what is the average score of the remaining students?",
+    "answer": "58.",
+    "explanation": "Total marks = 40×62 = 2480. Top-5 total = 5×90 = 450. Remaining sum = 2030 over 35 students. Average = 2030/35 = 58.",
+    "source": "Econ_Systems_Paper",
+    "category": "Age Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "106170d9"
+  },
+  {
+    "question": "A group of 8 explorers must cross a river with no bridge. Two local children have a canoe that can carry either 1 explorer OR 2 children (but not an explorer and a child together), and the canoe cannot cross by itself. What is the minimum number of crossings needed to get all 8 explorers across, and briefly describe the strategy?",
+    "answer": "17 crossings.",
+    "explanation": "General formula for n adults with a 2-child/1-adult canoe: 2n+1 crossings. For n=8: 2×8+1 = 17. Pattern: both children cross → one child returns → one explorer crosses → the other child (who is now on the far side... ) returns; repeat, ending once the last explorer crosses (the final return trip isn't needed).",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "8affa987"
+  },
+  {
+    "question": "You have 12 boxes of coins. Every coin normally weighs 10 g, but all the coins in exactly one box are counterfeit and weigh 9 g each. Using an electronic (digital-readout) weighing scale exactly once, how can you identify the box with the counterfeit coins?",
+    "answer": "Take 1 coin from box 1, 2 coins from box 2, 3 from box 3, ... 12 from box 12, and weigh all 78 coins together.",
+    "explanation": "If all coins were genuine (10 g), total = 78×10 = 780 g. Each coin from the defective box is 1 g light, so the shortfall in grams below 780 g exactly equals the number of coins taken from the defective box — which equals that box's number. E.g. if the scale reads 771 g, the shortfall (9 g) means box 9 is defective.",
+    "source": "Econ_Systems_Paper",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "8ffcf679"
+  },
+  {
+    "question": "Four switches outside a closed, windowless room each control one of four identical-looking bulbs inside. You may flip the switches as many times as you like from outside, then you may enter the room exactly once to look at the bulbs (and touch them). How do you determine which switch controls which bulb in that single visit?",
+    "answer": "Leave switch 4 off the whole time. Turn switch 1 on for several minutes, then off. Turn switch 2 on and leave it on. Turn switch 3 on only briefly right before entering, then off. Enter and check each bulb.",
+    "explanation": "Bulb states after entering: switch 2's bulb is ON. Switch 1's bulb is OFF but noticeably warm (was on a long time). Switch 3's bulb is OFF but only slightly warm (was on briefly). Switch 4's bulb is OFF and cold (never turned on). All four are now distinguishable.",
+    "source": "Econ_Systems_Paper",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "f84c0c10"
+  },
+  {
+    "question": "You have three boxes labelled 'Pens', 'Pencils', and 'Pens & Pencils'. You are told that all three labels are currently wrong. You are allowed to draw exactly one item, from exactly one box of your choosing (without looking inside), to correctly relabel all three boxes. Which box do you draw from, and how do you deduce the correct labels for the other two?",
+    "answer": "Draw from the box labelled 'Pens & Pencils'.",
+    "explanation": "Since every label is wrong, this box cannot actually be mixed — it holds only pens or only pencils. Whatever single item you draw tells you its true (single) content, so relabel this box accordingly. The box labelled 'Pens' can't truly be Pens (wrong label) and, since the 'mixed' item is already assigned, it must be the true 'Pens & Pencils' box (it can't be the other single-fruit type either, by elimination) — similarly deduce the box labelled 'Pencils' is the true 'Pens' or 'Pencils' box, whichever remains.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "fbfafc63"
+  },
+  {
+    "question": "60 people stand in a circle, numbered 1 to 60. Starting with person 1, every 2nd person is eliminated going around the circle (person 2 first, then 4, then 6, and so on, skipping the eliminated ones) until only one person remains. Which position number survives?",
+    "answer": "Position 57.",
+    "explanation": "Josephus problem with every 2nd person eliminated: survivor = 2L+1, where L = n − 2^m and 2^m is the largest power of 2 ≤ n. For n=60: 2^m=32, L=28, survivor = 2(28)+1 = 57.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "839947c6"
+  },
+  {
+    "question": "You have 8 identical-looking coins. One of them is counterfeit and is known to be slightly lighter than the rest. Using a simple two-pan balance scale, what is the minimum number of weighings needed to guarantee finding the counterfeit coin?",
+    "answer": "2 weighings.",
+    "explanation": "A balance scale weighing gives 3 possible outcomes (left-heavy, right-heavy, balanced), and you already know the fake is lighter, so w weighings can distinguish up to 3^w coins. 3²=9 ≥ 8, so 2 weighings suffice (split 3-3-2 and narrow down).",
+    "source": "Econ_Systems_Paper",
+    "category": "Weight & Ratio Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "96f13374"
+  },
+  {
+    "question": "You are at a desert fork with two guards, one of whom always tells the truth and the other who always lies (you don't know which is which). One path leads to safety, the other to danger. You may ask exactly ONE guard exactly ONE question. What should you ask?",
+    "answer": "Ask either guard: 'If I asked the OTHER guard which path leads to safety, what would he say?' Then take the OPPOSITE of the path he names.",
+    "explanation": "Whichever guard you ask, the truth-teller accurately reports the liar's (false) answer, and the liar lies about the truth-teller's (true) answer — both routes lead you to the same (wrong) path being named, so the safe path is always the opposite one.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "554b8cda"
+  },
+  {
+    "question": "Now suppose there is only a single guard at the fork, who might always tell the truth or might always lie — you don't know which. What single question guarantees you can identify the safe path from his answer?",
+    "answer": "Ask him: 'If I asked you whether the LEFT path leads to safety, would you say yes?' Take his answer at face value: 'yes' means go left, 'no' means go right.",
+    "explanation": "This is a self-referential double-negative question. A truth-teller answers honestly about the left path. A liar, forced to lie about what he'd lie about, is forced back to the truth in his final answer — so in both cases the literal answer he gives points to the genuinely safe path.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "0ff9261b"
+  },
+  {
+    "question": "This is the 'look-and-say' sequence: 1, 11, 21, 1211, 111221, 312211, 13112221, ___, ___ (fill in the next TWO terms).",
+    "answer": "1113213211, then 31131211131221.",
+    "explanation": "Each term describes the previous one aloud (\"look-and-say\"). 13112221 → read as 'one 1, one 3, two 1s, three 2s, one 1' → 1113213211. Reading THAT aloud: 'three 1s, one 3, one 2, one 1, one 3, one 2, two 1s' → 31131211131221.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number Series & Patterns",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "678cc9bf"
+  },
+  {
+    "question": "Find the next number in the series: 2, 6, 12, 20, 30, 42, ?",
+    "answer": "56.",
+    "explanation": "Differences: 4,6,8,10,12 (increasing by 2). Next difference = 14. 42+14 = 56.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number Series & Patterns",
+    "hint": "The answer contains numbers/math.",
+    "id": "ed448d96"
+  },
+  {
+    "question": "Find the next number in the series: 3, 8, 15, 24, 35, 48, ?",
+    "answer": "63.",
+    "explanation": "This is the series n²+2n. Differences: 5,7,9,11,13 (increasing by 2). Next difference = 15. 48+15 = 63.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number Series & Patterns",
+    "hint": "The answer contains numbers/math.",
+    "id": "eb54fd9d"
+  },
+  {
+    "question": "Find the missing term: Z, 25, X, 21, V, 17, T, ?",
+    "answer": "13.",
+    "explanation": "Two interleaved series: letters go backward by 2 (Z, X, V, T, …) and numbers go down by 4 (25, 21, 17, 13, …). The next term (after T) continues the numeric series: 13.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number Series & Patterns",
+    "hint": "The answer contains numbers/math.",
+    "id": "ac3cabab"
+  },
+  {
+    "question": "Find the next number in the series: 2, 3, 5, 7, 11, 13, 17, ?",
+    "answer": "19.",
+    "explanation": "Series of prime numbers: 2,3,5,7,11,13,17,19.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number Series & Patterns",
+    "hint": "The answer contains numbers/math.",
+    "id": "844af26c"
+  },
+  {
+    "question": "Consider the letters A B C D E F G H I J. What letter is TWO places to the right of the letter that is THREE places to the left of the letter that is FOUR places to the right of C?",
+    "answer": "F.",
+    "explanation": "4 places right of C → G. 3 places left of G → D. 2 places right of D → F.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer is 2 characters long and starts with 'F'.",
+    "id": "6d6b4306"
+  },
+  {
+    "question": "If, in a certain code language, 'FLOWER' is written as 'GMPXFS', how would 'GARDEN' be written in that same code?",
+    "answer": "HBSEFO.",
+    "explanation": "Each letter is shifted forward by 1 in the alphabet (F→G, L→M, etc.). Applying the same shift to G-A-R-D-E-N gives H-B-S-E-F-O.",
+    "source": "Econ_Systems_Paper",
+    "category": "Age Puzzles",
+    "hint": "The answer is 7 characters long and starts with 'H'.",
+    "id": "a5731d9e"
+  },
+  {
+    "question": "In a certain code, CAT = 24 and DOG = 26 (each letter's code value is its position in the alphabet, summed). Using the same rule, what is the code value of COW?",
+    "answer": "41.",
+    "explanation": "Code value = sum of alphabet positions. C(3)+O(15)+W(23) = 41.",
+    "source": "Econ_Systems_Paper",
+    "category": "Coding & Decoding",
+    "hint": "The answer contains numbers/math.",
+    "id": "9b60290b"
+  },
+  {
+    "question": "Pointing to a photograph, a man says, 'She is the daughter of my grandfather's only son.' How is the woman in the photograph related to the man (assuming the man himself is that only son)?",
+    "answer": "Sister.",
+    "explanation": "The man's grandfather's only son is the man's own father. So the woman is 'my father's daughter' — i.e. the man's sister.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer is 7 characters long and starts with 'S'.",
+    "id": "e743b146"
+  },
+  {
+    "question": "Find a 4-digit number ABCD (all digits need not be distinct) such that when you reverse its digits you get exactly 4 times the original number, i.e. ABCD × 4 = DCBA.",
+    "answer": "2178 × 4 = 8712.",
+    "explanation": "This is a well-known cryptarithmetic identity: 2178 reversed is 8712, and 2178×4 = 8712 exactly.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "cd1b143a"
+  },
+  {
+    "question": "A 6-digit number has a digit sum of 35. Exactly TWO of the following three statements about it are true: (i) it is a perfect square, (ii) it is a perfect cube, (iii) it is less than 2,50,000. Find the number.",
+    "answer": "148877 (=53³).",
+    "explanation": "Digit sum of 148877 = 1+4+8+8+7+7 = 35. It is a perfect cube (53³) but NOT a perfect square, and it is less than 2,50,000 — so statements (ii) and (iii) are true and (i) is false, satisfying 'exactly two true'.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "cf3c8dec"
+  },
+  {
+    "question": "Using the digits 9, 8, 7, 6, 5, 4, 3, 2, 1 in that exact order (no rearranging), insert +, −, or nothing between consecutive digits (to allow concatenation, e.g. '98') so that the expression equals 100. Show one valid arrangement.",
+    "answer": "One valid arrangement: 9 − 8 + 76 + 54 − 32 + 1 = 100.",
+    "explanation": "(Multiple valid arrangements exist — e.g. 9+8+76+5+4−3+2−1=100 also works — any correct one should be accepted.)",
+    "source": "Econ_Systems_Paper",
+    "category": "Number & Digit Puzzles",
+    "hint": "Try reading the problem statement one more time.",
+    "id": "f3df42b4"
+  },
+  {
+    "question": "Using exactly four 4's and any of the operators (+, −, ×, ÷), make an expression equal to 17.",
+    "answer": "4 × 4 + 4 ÷ 4 = 17.",
+    "explanation": "16 + 1 = 17, using exactly four 4's.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "0ae48362"
+  },
+  {
+    "question": "Find the smallest positive number which leaves a remainder of 1 when divided by each of 2, 3, 4, 5 and 6, but is exactly divisible by 7.",
+    "answer": "301.",
+    "explanation": "LCM(2,3,4,5,6) = 60, so the number is of the form 60k+1. Need 60k+1 divisible by 7: testing k=0,1,2,3,4 fails; k=5 gives 301, and 301 ÷ 7 = 43 exactly. So 301 is the smallest such number.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "fe0679ad"
+  },
+  {
+    "question": "I have branches, but no fruit, trunk, or leaves. What am I?",
+    "answer": "A bank.",
+    "explanation": "A bank has branches (locations) but not the tree kind.",
+    "source": "Econ_Systems_Paper",
+    "category": "Lateral Thinking Riddles",
+    "hint": "The answer is 7 characters long and starts with 'A'.",
+    "id": "ce03b1c1"
+  },
+  {
+    "question": "I have keys but open no locks. I have space but no room. You can type on me but never step inside me. What am I?",
+    "answer": "A keyboard.",
+    "explanation": "Keyboards have keys and a space bar, but no locks or physical rooms.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer is 11 characters long and starts with 'A'.",
+    "id": "be7de6d9"
+  },
+  {
+    "question": "What can travel all the way around the world while staying in exactly one corner?",
+    "answer": "A postage stamp.",
+    "explanation": "A stamped letter/envelope can travel worldwide while the stamp itself sits in one corner of it.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer is 16 characters long and starts with 'A'.",
+    "id": "062ede3f"
+  },
+  {
+    "question": "The person who makes me sells me. The person who buys me never uses me. The person who finally uses me never knows they're using me. What am I?",
+    "answer": "A coffin.",
+    "explanation": "The maker/undertaker sells it, the buyer (or their family) never personally uses it, and the person who uses it (the deceased) is never aware of it.",
+    "source": "Econ_Systems_Paper",
+    "category": "Number & Digit Puzzles",
+    "hint": "The answer is 9 characters long and starts with 'A'.",
+    "id": "850d3b20"
+  },
+  {
+    "question": "What has a head and a tail, but no body?",
+    "answer": "A coin.",
+    "explanation": "Coins have a 'head' (heads side) and a 'tail' (tails side) but no body.",
+    "source": "Econ_Systems_Paper",
+    "category": "Classic Logic Puzzles",
+    "hint": "The answer is 7 characters long and starts with 'A'.",
+    "id": "23202c53"
+  },
+  {
+    "question": "A clock loses 12 minutes every hour. It was set to the correct time at midnight. It now shows 5:00 a.m., and you know it stopped running exactly 3 hours ago. What is the actual correct time right now?",
+    "answer": "9:15 a.m.",
+    "explanation": "Clock speed factor = 48/60 = 0.8 (loses 12 min every 60). Clock showed 5:00 a.m. = 300 clock-minutes after midnight. Real time elapsed = 300/0.8 = 375 min = 6h15m, so it stopped at real time 6:15 a.m. Adding the 3 real hours since it stopped: 6:15 + 3:00 = 9:15 a.m.",
+    "source": "Econ_Systems_Paper",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "5fea3fd8"
+  },
+  {
+    "question": "A clock chimes 6 times in 10 seconds (counting the gaps between chimes, not the chimes themselves, as taking equal time). How many times will it chime in 30 seconds?",
+    "answer": "16 times.",
+    "explanation": "6 chimes span 5 equal gaps in 10 sec → each gap = 2 sec. In 30 sec there are 15 gaps → 15+1 = 16 chimes.",
+    "source": "Econ_Systems_Paper",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "The answer contains numbers/math.",
+    "id": "b1b99744"
+  },
+  {
+    "question": "If today is a Wednesday, what day of the week will it be exactly 100 days from now?",
+    "answer": "Friday.",
+    "explanation": "100 mod 7 = 2. Wednesday + 2 days = Friday.",
+    "source": "Econ_Systems_Paper",
+    "category": "Clock & Calendar Puzzles",
+    "hint": "The answer is 7 characters long and starts with 'F'.",
+    "id": "7d400d53"
+  }
+]
