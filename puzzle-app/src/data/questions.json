@@ -1,0 +1,344 @@
+[
+  {
+    "id": "q1",
+    "title": "Reverse a String using Recursion",
+    "question": "Create a C program to reverse a string using recursion.",
+    "hint": "Create a function that takes a string pointer. If the current character is not '\\0', call the function with the next character (pointer + 1), and then print the current character.",
+    "solution": "#include <stdio.h>\nvoid reverse(char *str) {\n    if (*str) {\n        reverse(str + 1);\n        printf(\"%c\", *str);\n    }\n}\nint main() {\n    char str[100];\n    if (scanf(\"%99s\", str) == 1) reverse(str);\n    return 0;\n}",
+    "explanation": "By calling `reverse(str + 1)` before `printf`, the recursion stack pushes characters until it hits the null terminator, then prints them as the stack unwinds.",
+    "testCases": [
+      {
+        "input": "hello",
+        "expectedOutput": "olleh"
+      },
+      {
+        "input": "C-Programming",
+        "expectedOutput": "gnimmargorP-C"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "title": "Reverse a String using Pointers and Recursion",
+    "question": "Create a C program to reverse a string using pointers and recursion.",
+    "hint": "Pass two pointers (left and right). Swap the values at the pointers, then recursively call the function moving the left pointer up and the right pointer down.",
+    "solution": "#include <stdio.h>\n#include <string.h>\nvoid reverse(char *l, char *r) {\n    if (l >= r) return;\n    char t = *l; *l = *r; *r = t;\n    reverse(l + 1, r - 1);\n}\nint main() {\n    char str[100];\n    if (scanf(\"%99s\", str) == 1) {\n        reverse(str, str + strlen(str) - 1);\n        printf(\"%s\", str);\n    }\n    return 0;\n}",
+    "explanation": "This approach swaps the elements in-place using pointers. The base case for the recursion is when the left pointer crosses or equals the right pointer.",
+    "testCases": [
+      {
+        "input": "pointer",
+        "expectedOutput": "retniop"
+      },
+      {
+        "input": "recursion",
+        "expectedOutput": "noisrucer"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "title": "Implement a Stack using Linked List",
+    "question": "Create a C program to implement a stack using linked list. The user should be able to specify the size, insert elements, and find the position of an element.",
+    "hint": "Use a linked list to implement LIFO (Last In, First Out). To find an element's position, traverse from the `top` pointer downwards.",
+    "solution": "#include <stdio.h>\n#include <stdlib.h>\nstruct Node { int data; struct Node* next; };\nstruct Node* top = NULL;\nvoid push(int val) {\n    struct Node* temp = malloc(sizeof(struct Node));\n    temp->data = val; temp->next = top; top = temp;\n}\nint find(int val) {\n    struct Node* curr = top; int pos = 1;\n    while(curr) { if(curr->data == val) return pos; curr = curr->next; pos++; }\n    return -1;\n}\nint main() {\n    int n, target;\n    if(scanf(\"%d\", &n) == 1) {\n        for(int i=0; i<n; i++) { int v; scanf(\"%d\", &v); push(v); }\n        scanf(\"%d\", &target);\n        printf(\"%d\", find(target));\n    }\n    return 0;\n}",
+    "explanation": "The `push` operation dynamically allocates a node and updates the `top` pointer. The `find` function iterates through the list from the top, incrementing a position counter until it finds the target data.",
+    "testCases": [
+      {
+        "input": "3 10 20 30 20",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "4 1 2 3 4 1",
+        "expectedOutput": "4"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "title": "Add Two Numbers without + Operator",
+    "question": "Create a C program to add two numbers without using the + operator.",
+    "hint": "Use bitwise XOR (^) for addition without carry, and bitwise AND (&) followed by a left shift (<< 1) to calculate the carry. Repeat until the carry is 0.",
+    "solution": "#include <stdio.h>\nint add(int a, int b) {\n    while (b != 0) {\n        int carry = a & b;\n        a = a ^ b;\n        b = (unsigned int)carry << 1;\n    }\n    return a;\n}\nint main() {\n    int num1, num2;\n    if (scanf(\"%d %d\", &num1, &num2) == 2) printf(\"%d\", add(num1, num2));\n    return 0;\n}",
+    "explanation": "The XOR operator simulates addition without carry. The AND operator finds where bits carry over. Shifting the carry left and adding it back (via the loop) resolves all carries.",
+    "testCases": [
+      {
+        "input": "5 7",
+        "expectedOutput": "12"
+      },
+      {
+        "input": "-3 15",
+        "expectedOutput": "12"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "title": "Subtract Two Numbers without - Operator",
+    "question": "Create a C program to subtract two numbers without using the - operator.",
+    "hint": "Use bitwise XOR (^) for the difference and AND (&) with NOT (~) to find the borrow.",
+    "solution": "#include <stdio.h>\nint subtract(int a, int b) {\n    while (b != 0) {\n        int borrow = (~a) & b;\n        a = a ^ b;\n        b = (unsigned int)borrow << 1;\n    }\n    return a;\n}\nint main() {\n    int num1, num2;\n    if (scanf(\"%d %d\", &num1, &num2) == 2) printf(\"%d\", subtract(num1, num2));\n    return 0;\n}",
+    "explanation": "Similar to addition, XOR is used for difference. The borrow is calculated by inverting the bits of `a` and ANDing with `b`, then shifted left.",
+    "testCases": [
+      {
+        "input": "10 5",
+        "expectedOutput": "5"
+      },
+      {
+        "input": "5 10",
+        "expectedOutput": "-5"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "title": "Swap Two Numbers using Bitwise Operator",
+    "question": "Create a C program to swap two numbers using bitwise operator.",
+    "hint": "Use three consecutive XOR (^) operations: a = a ^ b; b = a ^ b; a = a ^ b;",
+    "solution": "#include <stdio.h>\nint main() {\n    int a, b;\n    if(scanf(\"%d %d\", &a, &b) == 2) {\n        a = a ^ b;\n        b = a ^ b;\n        a = a ^ b;\n        printf(\"%d %d\", a, b);\n    }\n    return 0;\n}",
+    "explanation": "XORing a number with itself results in 0. By combining `a` and `b` in `a`, we can extract the original `a` into `b`, and then extract the original `b` into `a`.",
+    "testCases": [
+      {
+        "input": "10 20",
+        "expectedOutput": "20 10"
+      },
+      {
+        "input": "55 99",
+        "expectedOutput": "99 55"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "title": "Count No of 1s in Binary",
+    "question": "Create a C program to count the number of 1s in the binary value of a given number.",
+    "hint": "Repeatedly apply n = n & (n - 1) until n becomes 0. Each operation removes the rightmost set bit.",
+    "solution": "#include <stdio.h>\nint countSetBits(int n) {\n    int count = 0;\n    while (n) {\n        n &= (n - 1);\n        count++;\n    }\n    return count;\n}\nint main() {\n    int num;\n    if (scanf(\"%d\", &num) == 1) printf(\"%d\", countSetBits(num));\n    return 0;\n}",
+    "explanation": "Brian Kernighan's algorithm. `n & (n-1)` flips the least significant set bit in `n` to 0. We repeat this and increment a counter until `n` is 0.",
+    "testCases": [
+      {
+        "input": "5",
+        "expectedOutput": "2"
+      },
+      {
+        "input": "15",
+        "expectedOutput": "4"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "title": "Reverse a Hexadecimal Number",
+    "question": "Create a C program to reverse a hexadecimal number (e.g. Input: C2A7 -> Output: 7A2C).",
+    "hint": "Read the hex number as a string, find its length, and print it backwards.",
+    "solution": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char hex[20];\n    if (scanf(\"%19s\", hex) == 1) {\n        int len = strlen(hex);\n        for (int i = len - 1; i >= 0; i--) printf(\"%c\", hex[i]);\n    }\n    return 0;\n}",
+    "explanation": "Treating the hexadecimal input as a string allows us to easily iterate through it backwards and print the characters in reverse order.",
+    "testCases": [
+      {
+        "input": "C2A7",
+        "expectedOutput": "7A2C"
+      },
+      {
+        "input": "FFF0",
+        "expectedOutput": "0FFF"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "title": "Swap the Nibbles of a Byte",
+    "question": "Create a C program to swap the nibbles.",
+    "hint": "Shift the number right by 4 bits (to move left nibble to right) and left by 4 bits (to move right nibble to left), then OR them.",
+    "solution": "#include <stdio.h>\nunsigned char swapNibbles(unsigned char x) {\n    return ( (x & 0x0F) << 4 | (x & 0xF0) >> 4 );\n}\nint main() {\n    unsigned int num;\n    if (scanf(\"%u\", &num) == 1) {\n        printf(\"%u\", swapNibbles((unsigned char)num));\n    }\n    return 0;\n}",
+    "explanation": "The mask `0x0F` gets the right nibble, and `<< 4` shifts it left. The mask `0xF0` gets the left nibble, and `>> 4` shifts it right. The OR operator combines them.",
+    "testCases": [
+      {
+        "input": "100",
+        "expectedOutput": "70"
+      },
+      {
+        "input": "171",
+        "expectedOutput": "186"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "title": "Find Maximum of Two Numbers",
+    "question": "Create a C program to find maximum of two numbers without using relational operator.",
+    "hint": "Use the mathematical formula: (a + b + abs(a - b)) / 2.",
+    "solution": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int a, b;\n    if (scanf(\"%d %d\", &a, &b) == 2) {\n        int max = (a + b + abs(a - b)) / 2;\n        printf(\"%d\", max);\n    }\n    return 0;\n}",
+    "explanation": "The absolute difference adds to the larger number. If `a` > `b`, `a-b` is positive, making the formula `2a/2` = `a`.",
+    "testCases": [
+      {
+        "input": "10 20",
+        "expectedOutput": "20"
+      },
+      {
+        "input": "-5 -2",
+        "expectedOutput": "-2"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "title": "Dynamically Allocate Memory",
+    "question": "Create a C program to dynamically allocate memory (Read N integers and find their sum).",
+    "hint": "Use the `malloc` function from `<stdlib.h>` to allocate an array of size N * sizeof(int).",
+    "solution": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int n;\n    if(scanf(\"%d\", &n) == 1) {\n        int *arr = malloc(n * sizeof(int));\n        int sum = 0;\n        for(int i=0; i<n; i++) {\n            scanf(\"%d\", &arr[i]);\n            sum += arr[i];\n        }\n        printf(\"%d\", sum);\n        free(arr);\n    }\n    return 0;\n}",
+    "explanation": "`malloc` allocates a contiguous block of memory on the heap. We store the elements, calculate the sum, and finally use `free` to release the memory.",
+    "testCases": [
+      {
+        "input": "3 10 20 30",
+        "expectedOutput": "60"
+      },
+      {
+        "input": "5 1 1 1 1 1",
+        "expectedOutput": "5"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "title": "Insert Character in String using Arrays",
+    "question": "Create a C program to insert a character in a string at the specified location using arrays.",
+    "hint": "Shift all characters starting from the specified index one position to the right, then insert the new character.",
+    "solution": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[100], ch; int pos;\n    if(scanf(\"%s %c %d\", str, &ch, &pos) == 3) {\n        int len = strlen(str);\n        for(int i=len; i>=pos; i--) str[i+1] = str[i];\n        str[pos] = ch;\n        printf(\"%s\", str);\n    }\n    return 0;\n}",
+    "explanation": "We iterate backwards from the end of the string to the insertion index (`pos`), shifting every character to the right by one space (`str[i+1] = str[i]`), including the null terminator.",
+    "testCases": [
+      {
+        "input": "hello x 2",
+        "expectedOutput": "hexllo"
+      },
+      {
+        "input": "test a 0",
+        "expectedOutput": "atest"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "title": "Insert Character in String using Pointers",
+    "question": "Create a C program to insert a character in a string at the specified location using pointers.",
+    "hint": "Use a pointer starting at the end of the string (`str + len`) and shift elements right until you reach `str + pos`.",
+    "solution": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[100], ch; int pos;\n    if(scanf(\"%s %c %d\", str, &ch, &pos) == 3) {\n        char *p = str + strlen(str);\n        while(p >= str + pos) { *(p+1) = *p; p--; }\n        *(str + pos) = ch;\n        printf(\"%s\", str);\n    }\n    return 0;\n}",
+    "explanation": "Instead of array indexing (`str[i]`), we use a pointer `p` that points to the characters. We decrement `p` and shift data to `*(p+1)`.",
+    "testCases": [
+      {
+        "input": "pointer y 4",
+        "expectedOutput": "poinyter"
+      },
+      {
+        "input": "C-Lang + 1",
+        "expectedOutput": "C+-Lang"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "title": "Insert Character in a File",
+    "question": "Create a C program to insert a character at a specified location in a File.",
+    "hint": "Open a file with `r+` mode, use `fseek` to go to the specified position, and use `fputc` to overwrite or insert.",
+    "solution": "#include <stdio.h>\nint main() {\n    char ch; int pos;\n    if(scanf(\" %c %d\", &ch, &pos) == 2) {\n        FILE *f = fopen(\"test.txt\", \"w\");\n        fputs(\"hello\", f); fclose(f);\n        f = fopen(\"test.txt\", \"r+\");\n        fseek(f, pos, SEEK_SET);\n        fputc(ch, f); fclose(f);\n        f = fopen(\"test.txt\", \"r\");\n        char buf[20]; fscanf(f, \"%s\", buf); printf(\"%s\", buf);\n        fclose(f);\n    }\n    return 0;\n}",
+    "explanation": "The program creates a file with 'hello', then opens it in 'r+' (read/write) mode. `fseek` navigates directly to the byte index, and `fputc` inserts/overwrites the character.",
+    "testCases": [
+      {
+        "input": "x 1",
+        "expectedOutput": "hxllo"
+      },
+      {
+        "input": "y 4",
+        "expectedOutput": "helly"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "title": "Read File 1 and Write to File 2",
+    "question": "Create a C program to read File 1 and write it in File 2 with some characters inserted at specified location.",
+    "hint": "Read characters one by one using `fgetc`. Keep a counter. When the counter reaches the position, write the new character before the original character using `fputc`.",
+    "solution": "#include <stdio.h>\nint main() {\n    char ch; int pos;\n    if(scanf(\" %c %d\", &ch, &pos) == 2) {\n        FILE *f1 = fopen(\"f1.txt\", \"w\"); fputs(\"world\", f1); fclose(f1);\n        f1 = fopen(\"f1.txt\", \"r\"); FILE *f2 = fopen(\"f2.txt\", \"w\");\n        int c, curr = 0;\n        while((c = fgetc(f1)) != EOF) {\n            if(curr == pos) fputc(ch, f2);\n            fputc(c, f2); curr++;\n        }\n        fclose(f1); fclose(f2);\n        f2 = fopen(\"f2.txt\", \"r\"); char buf[20]; fscanf(f2, \"%s\", buf); printf(\"%s\", buf);\n        fclose(f2);\n    }\n    return 0;\n}",
+    "explanation": "This reads file 1 sequentially. By keeping track of the `curr` index, it can seamlessly inject the new character into the output stream for file 2 without overwriting data.",
+    "testCases": [
+      {
+        "input": "x 2",
+        "expectedOutput": "woxrld"
+      },
+      {
+        "input": "a 0",
+        "expectedOutput": "aworld"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "title": "Middle element in Doubly Linked List",
+    "question": "Create a C program to find the middle element in a Doubly linked list without counting.",
+    "hint": "Use the Two-Pointer approach. Let a 'slow' pointer advance 1 step, and a 'fast' pointer advance 2 steps. When 'fast' reaches the end, 'slow' is at the middle.",
+    "solution": "#include <stdio.h>\n#include <stdlib.h>\nstruct Node { int data; struct Node* prev; struct Node* next; };\nint main() {\n    int n; if(scanf(\"%d\", &n) != 1) return 0;\n    struct Node *head = NULL, *tail = NULL;\n    for(int i=0; i<n; i++) {\n        int v; scanf(\"%d\", &v);\n        struct Node* nn = malloc(sizeof(struct Node));\n        nn->data = v; nn->next = NULL; nn->prev = tail;\n        if(tail) tail->next = nn; else head = nn;\n        tail = nn;\n    }\n    struct Node *slow = head, *fast = head;\n    while(fast && fast->next) { slow = slow->next; fast = fast->next->next; }\n    printf(\"%d\", slow->data);\n    return 0;\n}",
+    "explanation": "The 'fast' pointer travels twice as quickly. When the fast pointer hits the end of the list, the 'slow' pointer has naturally traveled exactly half the distance.",
+    "testCases": [
+      {
+        "input": "5 10 20 30 40 50",
+        "expectedOutput": "30"
+      },
+      {
+        "input": "3 1 2 3",
+        "expectedOutput": "2"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "title": "Middle element in Singly Linked List",
+    "question": "Create a C program to find the middle element in a Singly linked list without counting.",
+    "hint": "Just like the doubly linked list, use the slow and fast pointer approach. The `prev` pointer is irrelevant here.",
+    "solution": "#include <stdio.h>\n#include <stdlib.h>\nstruct Node { int data; struct Node* next; };\nint main() {\n    int n; if(scanf(\"%d\", &n) != 1) return 0;\n    struct Node *head = NULL, *tail = NULL;\n    for(int i=0; i<n; i++) {\n        int v; scanf(\"%d\", &v);\n        struct Node* nn = malloc(sizeof(struct Node));\n        nn->data = v; nn->next = NULL;\n        if(tail) tail->next = nn; else head = nn;\n        tail = nn;\n    }\n    struct Node *slow = head, *fast = head;\n    while(fast && fast->next) { slow = slow->next; fast = fast->next->next; }\n    printf(\"%d\", slow->data);\n    return 0;\n}",
+    "explanation": "The lack of backward traversal means a singly linked list is perfect for the slow/fast pointer technique to identify the midpoint in O(N/2) time.",
+    "testCases": [
+      {
+        "input": "5 100 200 300 400 500",
+        "expectedOutput": "300"
+      },
+      {
+        "input": "7 1 2 3 4 5 6 7",
+        "expectedOutput": "4"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "title": "Find whether given number is odd or even",
+    "question": "Create a C program to find whether given number is odd or even without using % 2.",
+    "hint": "Check the least significant bit using the bitwise AND operator (`n & 1`). If it's 1, the number is odd.",
+    "solution": "#include <stdio.h>\nint main() {\n    int n; \n    if(scanf(\"%d\", &n) == 1) {\n        if(n & 1) printf(\"odd\"); \n        else printf(\"even\");\n    }\n    return 0;\n}",
+    "explanation": "In binary, all even numbers have their lowest bit set to 0, and all odd numbers have their lowest bit set to 1. `n & 1` explicitly isolates that single bit.",
+    "testCases": [
+      {
+        "input": "15",
+        "expectedOutput": "odd"
+      },
+      {
+        "input": "42",
+        "expectedOutput": "even"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "title": "Print from 1 to N without using loops",
+    "question": "Create a C program to print from 1 to 100 without using loops. (We'll use N as input for testing).",
+    "hint": "Use recursion! Create a function that takes a number, recursively calls itself with (n-1), and then prints the number.",
+    "solution": "#include <stdio.h>\nvoid printNums(int n) {\n    if(n > 1) printNums(n - 1);\n    printf(\"%d \", n);\n}\nint main() {\n    int n; \n    if(scanf(\"%d\", &n) == 1) printNums(n);\n    return 0;\n}",
+    "explanation": "Because `printNums(n-1)` is called *before* the `printf` statement, the numbers are stacked in memory all the way down to 1. When the recursion unwinds, they print in ascending order: 1, 2, 3...",
+    "testCases": [
+      {
+        "input": "5",
+        "expectedOutput": "1 2 3 4 5 "
+      },
+      {
+        "input": "10",
+        "expectedOutput": "1 2 3 4 5 6 7 8 9 10 "
+      }
+    ]
+  }
+]
